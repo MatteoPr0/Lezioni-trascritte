@@ -1,0 +1,1139 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Timing e terapia fisica nelle lesioni muscolari</title>
+<link href="fonts/fonts.css" rel="stylesheet">
+<style>
+:root{
+  --ink:#16141a; --ink-2:#4a4550; --muted:#7c7584;
+  --paper:#ffffff; --line:#ecdfe5;
+  --rosa:#f4a6c1; --rosa-soft:#fde8f0; --rosa-deep:#d6336c; --rosa-ink:#9c1c4b;
+  --nero:#17151b; --nero-2:#2a2730; --nero-soft:#f1eff3;
+  --indigo:#4a5a9e; --indigo-soft:#e8ebf6;
+  --ice:#3f86b8; --ice-soft:#e6f1f8;
+  --heat:#d9602b; --heat-soft:#fcebe2;
+  --green:#2f8a5b; --green-soft:#e3f3ea;
+  --amber:#b7791f; --amber-soft:#fbf1dc;
+}
+@page { size: A4; margin: 17mm 15mm 19mm 15mm; }
+@page cover { margin: 0; }
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{background:var(--paper);color:var(--ink);font-family:Inter,system-ui,sans-serif;font-size:10.2pt;line-height:1.55;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+p{margin:0 0 .65em}
+strong{font-weight:700}
+em{font-style:italic}
+.serif{font-family:Fraunces,Georgia,serif}
+.mono{font-family:"JetBrains Mono",ui-monospace,monospace}
+
+/* ---------- COVER ---------- */
+.cover{page:cover;width:210mm;height:297mm;position:relative;overflow:hidden;background:var(--nero);color:#fff;break-after:page}
+.cover svg.bg{position:absolute;inset:0;width:100%;height:100%}
+.cover .inner{position:absolute;left:18mm;right:18mm;top:22mm;bottom:20mm;display:flex;flex-direction:column}
+.cover .kicker{font-size:9pt;letter-spacing:.22em;text-transform:uppercase;color:var(--rosa);font-weight:700}
+.cover h1{font-family:Fraunces,serif;font-weight:800;font-size:38pt;line-height:1.02;margin:10mm 0 5mm;letter-spacing:-.01em}
+.cover h1 span{color:var(--rosa)}
+.cover .sub{font-size:13pt;color:#e9e2ea;max-width:135mm;line-height:1.4}
+.cover .meta{margin-top:auto;display:grid;grid-template-columns:1fr 1fr;gap:6mm 10mm;font-size:9pt;color:#cfc7d2}
+.cover .meta b{display:block;color:#fff;font-size:10pt;margin-bottom:1mm}
+.cover .band{display:flex;height:4mm;margin-top:8mm}
+.cover .band i{flex:1}
+.cover .band i:nth-child(odd){background:var(--rosa)} .cover .band i:nth-child(even){background:#000}
+
+/* ---------- STRUCTURE ---------- */
+.chapter{break-before:page}
+.ch-head{display:flex;align-items:flex-end;gap:5mm;border-bottom:2.5px solid var(--ink);padding-bottom:3mm;margin-bottom:5mm}
+.ch-num{font-family:Fraunces,serif;font-weight:800;font-size:46pt;line-height:.8;color:var(--rosa)}
+.ch-num.dark{color:var(--nero)}
+.ch-title h2{font-family:Fraunces,serif;font-size:22pt;line-height:1.08;margin:0;font-weight:800}
+.ch-title .eyebrow{font-size:8pt;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);font-weight:700;margin-bottom:1.5mm}
+h3{font-family:Fraunces,serif;font-size:13.5pt;margin:6mm 0 2mm;font-weight:700;break-after:avoid}
+h3 .tag{font-family:Inter;font-size:7.5pt;letter-spacing:.12em;text-transform:uppercase;vertical-align:middle;margin-left:2mm;padding:.6mm 2mm;border-radius:10px;background:var(--rosa-soft);color:var(--rosa-ink)}
+h4{font-size:10.5pt;margin:4mm 0 1.5mm;break-after:avoid}
+.lead{font-size:11.2pt;color:var(--ink-2);line-height:1.5;margin-bottom:4mm}
+ul,ol{margin:0 0 .7em;padding-left:5mm}
+li{margin:.2em 0}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:5mm}
+.cols3{display:grid;grid-template-columns:repeat(3,1fr);gap:4mm}
+.avoid{break-inside:avoid}
+
+/* ---------- SPEAKER BOXES ---------- */
+.box{border-radius:3mm;padding:3.5mm 4.5mm;margin:3mm 0 4mm;break-inside:avoid;position:relative}
+.box .lbl{font-size:7.5pt;letter-spacing:.16em;text-transform:uppercase;font-weight:800;margin-bottom:1.5mm;display:flex;align-items:center;gap:2mm}
+.box .lbl::before{content:"";width:2.4mm;height:2.4mm;border-radius:50%;background:currentColor}
+.box p:last-child,.box ul:last-child{margin-bottom:0}
+.rosa{background:var(--rosa-soft);border-left:4px solid var(--rosa-deep)}
+.rosa .lbl{color:var(--rosa-ink)}
+.nera{background:var(--nero);color:#f3eff5}
+.nera .lbl{color:var(--rosa)}
+.nera strong{color:#fff}
+.key{background:#fff;border:2px solid var(--ink)}
+.key .lbl{color:var(--ink)}
+.deep{background:var(--indigo-soft);border-left:4px solid var(--indigo)}
+.deep .lbl{color:var(--indigo)}
+.warn{background:var(--amber-soft);border-left:4px solid var(--amber)}
+.warn .lbl{color:#8a5a12}
+.quote{font-family:Fraunces,serif;font-size:13pt;line-height:1.35;border-left:4px solid var(--rosa);padding:1mm 0 1mm 5mm;margin:4mm 0;color:var(--ink);break-inside:avoid}
+.quote small{display:block;font-family:Inter;font-size:8pt;color:var(--muted);margin-top:1.5mm;letter-spacing:.05em}
+
+/* ---------- FIGURES ---------- */
+figure{margin:3mm 0 5mm;break-inside:avoid}
+figure svg{width:100%;height:auto;display:block}
+figcaption{font-size:8.3pt;color:var(--muted);margin-top:1.8mm;line-height:1.4}
+figcaption b{color:var(--ink-2)}
+.fig-card{background:#fff;border:1px solid var(--line);border-radius:3mm;padding:4mm}
+
+/* ---------- TABLES ---------- */
+table{width:100%;border-collapse:collapse;font-size:8.8pt;margin:2mm 0 4mm;break-inside:avoid}
+th{background:var(--nero);color:#fff;text-align:left;font-weight:700;padding:2mm 2.4mm;font-size:8pt;letter-spacing:.04em}
+td{padding:2mm 2.4mm;border-bottom:1px solid var(--line);vertical-align:top}
+tr:nth-child(even) td{background:#fdf6f9}
+td.ph{font-weight:800;white-space:nowrap}
+
+/* ---------- MISC ---------- */
+.pill{display:inline-block;padding:.5mm 2.2mm;border-radius:10px;font-size:7.8pt;font-weight:700;letter-spacing:.03em}
+.p-rosa{background:var(--rosa-soft);color:var(--rosa-ink)} .p-nero{background:var(--nero);color:#fff}
+.p-ice{background:var(--ice-soft);color:#255f86} .p-heat{background:var(--heat-soft);color:#9a3f16}
+.toc{display:grid;grid-template-columns:1fr;gap:0}
+.toc a{display:grid;grid-template-columns:12mm 1fr auto;align-items:baseline;padding:1.5mm 0;border-bottom:1px dashed var(--line);color:inherit;text-decoration:none}
+.toc .n{font-family:Fraunces,serif;font-weight:800;font-size:15pt;color:var(--rosa-deep)}
+.toc .t{font-weight:600}
+.toc .t small{display:block;font-weight:400;color:var(--muted);font-size:8.5pt}
+.speakers{display:grid;grid-template-columns:1fr 1fr;gap:4mm;margin:4mm 0}
+.spk{border-radius:3mm;padding:4mm}
+.spk h5{margin:0 0 1mm;font-size:11pt}
+.spk .r{font-size:8pt;letter-spacing:.14em;text-transform:uppercase;font-weight:800;margin-bottom:2mm}
+.stat{display:flex;gap:4mm;margin:3mm 0}
+.stat div{flex:1;background:#fff;border:1px solid var(--line);border-radius:3mm;padding:3mm;text-align:center}
+.stat b{display:block;font-family:Fraunces,serif;font-size:20pt;line-height:1.05;color:var(--rosa-deep)}
+.stat span{font-size:8pt;color:var(--muted)}
+.gloss dt{font-weight:800;margin-top:2mm;break-after:avoid}
+.gloss dd{margin:0 0 1mm 0;color:var(--ink-2)}
+.gloss{display:grid;grid-template-columns:1fr 1fr;gap:0 7mm}
+.gloss div{break-inside:avoid}
+.quiz li{margin-bottom:2mm}
+.answers{font-size:8.6pt;color:var(--ink-2)}
+.check{list-style:none;padding-left:0}
+.check li{padding-left:6mm;position:relative}
+.check li::before{content:"✓";position:absolute;left:0;color:var(--rosa-deep);font-weight:800}
+.x li::before{content:"✗";color:#b42318}
+</style>
+</head>
+<body>
+
+<!-- ================= COVER ================= -->
+<section class="cover">
+  <svg class="bg" viewBox="0 0 794 1123" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+    <defs>
+      <linearGradient id="beam" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#f4a6c1" stop-opacity="0"/>
+        <stop offset=".55" stop-color="#f4a6c1" stop-opacity=".55"/>
+        <stop offset="1" stop-color="#ffffff" stop-opacity=".9"/>
+      </linearGradient>
+      <radialGradient id="glow" cx=".72" cy=".64" r=".35">
+        <stop offset="0" stop-color="#f4a6c1" stop-opacity=".45"/>
+        <stop offset="1" stop-color="#f4a6c1" stop-opacity="0"/>
+      </radialGradient>
+    </defs>
+    <rect width="794" height="1123" fill="#17151b"/>
+    <rect width="794" height="1123" fill="url(#glow)"/>
+    <!-- stadium lines -->
+    <g stroke="#ffffff" stroke-opacity=".06" fill="none" stroke-width="2">
+      <circle cx="560" cy="720" r="150"/><circle cx="560" cy="720" r="6" fill="#fff" fill-opacity=".08"/>
+      <line x1="0" y1="720" x2="794" y2="720"/>
+      <rect x="-40" y="420" width="840" height="600" rx="4"/>
+    </g>
+    <!-- muscle fibres -->
+    <g stroke-linecap="round" fill="none">
+      <path d="M-20 640 C200 610 360 610 794 560" stroke="#f4a6c1" stroke-width="16" stroke-opacity=".9"/>
+      <path d="M-20 672 C200 646 360 646 794 598" stroke="#f4a6c1" stroke-width="16" stroke-opacity=".7"/>
+      <path d="M-20 704 C180 684 330 684 470 668" stroke="#f4a6c1" stroke-width="16" stroke-opacity=".95"/>
+      <path d="M520 662 C620 652 700 644 794 636" stroke="#f4a6c1" stroke-width="16" stroke-opacity=".95"/>
+      <path d="M-20 736 C200 720 360 718 794 672" stroke="#f4a6c1" stroke-width="16" stroke-opacity=".6"/>
+      <path d="M-20 768 C200 756 360 752 794 710" stroke="#f4a6c1" stroke-width="16" stroke-opacity=".45"/>
+      <path d="M-20 800 C200 792 360 786 794 748" stroke="#f4a6c1" stroke-width="16" stroke-opacity=".3"/>
+    </g>
+    <!-- repair sparks at the gap -->
+    <g fill="#fff">
+      <circle cx="488" cy="666" r="4"/><circle cx="503" cy="664" r="3" fill-opacity=".8"/><circle cx="496" cy="676" r="2.5" fill-opacity=".7"/>
+    </g>
+    <!-- laser beam -->
+    <polygon points="760,120 790,140 505,668 492,662" fill="url(#beam)"/>
+    <circle cx="496" cy="666" r="26" fill="#fff" fill-opacity=".12"/>
+    <!-- light waves -->
+    <g stroke="#ffffff" stroke-opacity=".35" fill="none" stroke-width="1.5">
+      <path d="M600 330 q10 -12 20 0 t20 0 t20 0 t20 0"/>
+      <path d="M640 250 q10 -12 20 0 t20 0 t20 0"/>
+    </g>
+  </svg>
+  <div class="inner">
+    <div class="kicker">Palermo · Stadio Renzo Barbera · 27 settembre 2026</div>
+    <h1>Il momento giusto.<br><span>Terapia fisica</span> e recupero della lesione muscolare</h1>
+    <div class="sub">Dall’infortunio al ritorno in campo: crioterapia, crio-ultrasuoni, laserterapia ad alta potenza, TECAR e onde d’urto radiali, fase per fase.</div>
+    <div class="meta">
+      <div><b>Lezione illustrata</b>ricostruita dalla registrazione audio della sessione (≈ 110 min)</div>
+      <div><b>Health Performance Academy</b>Palermo Calcio · con OFI Agrigento e OFI Palermo‑Trapani</div>
+      <div><b>Slide rosa · Clinica</b>Dott. Francesco Pulicari, area fisioterapia</div>
+      <div><b>Slide nera · Tecnica</b>Paolo, direttore di un’accademia italiana di laserterapia (Bergamo)</div>
+    </div>
+    <div class="band"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+  </div>
+</section>
+
+<!-- ================= INTRO / TOC ================= -->
+<section>
+  <div class="ch-head">
+    <div class="ch-num">00</div>
+    <div class="ch-title"><div class="eyebrow">Prima di iniziare</div><h2>Come è fatta questa lezione</h2></div>
+  </div>
+
+  <p class="lead">La sessione, all’interno del percorso formativo della <strong>Health Performance Academy</strong> del Palermo Calcio, era intitolata “Timing, terapia fisica e recupero: focus sulle lesioni muscolari”. L’idea centrale: la stessa energia fisica può aiutare o essere inutile a seconda di <em>quando</em> e <em>come</em> la usi. Ogni mezzo fisico va scelto per la fase biologica in cui si trova il muscolo.</p>
+
+  <div class="speakers">
+    <div class="spk" style="background:var(--rosa-soft)">
+      <div class="r" style="color:var(--rosa-ink)">● Slide rosa · la clinica</div>
+      <h5>Dott. Francesco Pulicari</h5>
+      <div style="font-size:9pt;color:var(--ink-2)">Fisioterapista, responsabile dell’area fisioterapia della Health Performance Academy e dello staff sanitario del Palermo Calcio. Descrive <strong>cosa si fa sul calciatore</strong> in ogni fase e perché.</div>
+    </div>
+    <div class="spk" style="background:var(--nero);color:#eee">
+      <div class="r" style="color:var(--rosa)">● Slide nera · la tecnica</div>
+      <h5 style="color:#fff">Paolo (Bergamo)</h5>
+      <div style="font-size:9pt;color:#d8d2dc">Direttore di un’accademia italiana di laserterapia, ha una formazione in fisica biomedica e vent’anni di formazione e installazione di elettromedicali (&gt;3.900 negli studi italiani). Spiega <strong>quale energia fisica, misurata come</strong>.</div>
+    </div>
+  </div>
+
+  <div class="box warn">
+    <div class="lbl">Leggere con spirito critico</div>
+    <p>I relatori presentano come “gold standard” le tecnologie scelte dallo staff del Palermo Calcio. Il relatore tecnico viene dal mondo della produzione e formazione sugli elettromedicali. Alcune affermazioni sono esperienza di campo più che evidenza consolidata: in questi casi lo trovi segnalato nei box <span class="pill" style="background:var(--indigo-soft);color:var(--indigo)">Approfondimento</span>, che contengono note aggiunte e <strong>non</strong> dette al congresso.</p>
+  </div>
+
+  <h3>Indice</h3>
+  <div class="toc">
+    <a><span class="n">01</span><span class="t">Gli elettromedicali: le regole del gioco<small>Ministero, EUDAMED, targhetta, conformità, verifiche di sicurezza</small></span><span class="pill p-nero">tecnica</span></a>
+    <a><span class="n">02</span><span class="t">Se è misurabile, è fisico<small>Classificare le energie: freddo, suono, luce, corrente, onda meccanica</small></span><span class="pill p-nero">tecnica</span></a>
+    <a><span class="n">03</span><span class="t">Biologia della lesione muscolare<small>Le tre fasi, la metafora del ponte, le cellule satelliti</small></span><span class="pill p-rosa">clinica</span></a>
+    <a><span class="n">04</span><span class="t">Fase 1 · Acuta<small>Contenere lo stravaso: crioterapia −40 °C e crio‑ultrasuoni −10 °C a 1 MHz</small></span><span class="pill p-ice">freddo</span></a>
+    <a><span class="n">05</span><span class="t">Fase 2 · Riparazione<small>Laserterapia ad alta potenza e fotobiomodulazione: nanometri, watt, joule, termocontrollo</small></span><span class="pill p-rosa">luce</span></a>
+    <a><span class="n">06</span><span class="t">Fase 3 · Rimodellamento e ritorno in campo<small>TECAR a frequenza variabile e onde d’urto radiali</small></span><span class="pill p-heat">calore</span></a>
+    <a><span class="n">07</span><span class="t">Sintesi, glossario e autovalutazione<small>Tabella del timing, messaggi da portare a casa, quiz</small></span><span class="pill p-nero">ripasso</span></a>
+  </div>
+
+  <h3>La mappa della lezione</h3>
+  <figure class="fig-card">
+    <svg viewBox="0 0 680 210" role="img" aria-label="Percorso dalla lesione al ritorno in campo in tre fasi con le terapie di ciascuna">
+      <defs><marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#16141a"/></marker></defs>
+      <line x1="20" y1="60" x2="660" y2="60" stroke="#16141a" stroke-width="2" marker-end="url(#ar)"/>
+      <!-- milestones -->
+      <g font-family="Inter" font-size="11" font-weight="700" fill="#16141a" text-anchor="middle">
+        <circle cx="30" cy="60" r="9" fill="#d6336c"/><text x="30" y="36">Infortunio</text>
+        <circle cx="640" cy="60" r="9" fill="#2f8a5b"/><text x="620" y="36">Return to play</text>
+      </g>
+      <!-- phases -->
+      <g font-family="Inter">
+        <rect x="60" y="78" width="180" height="120" rx="10" fill="#e6f1f8"/>
+        <text x="72" y="100" font-size="12" font-weight="800" fill="#255f86">FASE 1 · ACUTA</text>
+        <text x="72" y="116" font-size="10" fill="#4a4550">distruzione delle fibre · gg 0–3</text>
+        <text x="72" y="140" font-size="10.5" fill="#16141a">• Crioterapia −40 °C (aria secca)</text>
+        <text x="72" y="156" font-size="10.5" fill="#16141a">• Crio‑ultrasuoni −10 °C · 1 MHz</text>
+        <text x="72" y="172" font-size="10.5" fill="#16141a">• Compressione, elevazione,</text>
+        <text x="82" y="186" font-size="10.5" fill="#16141a">protezione (canadesi)</text>
+
+        <rect x="252" y="78" width="180" height="120" rx="10" fill="#fde8f0"/>
+        <text x="264" y="100" font-size="12" font-weight="800" fill="#9c1c4b">FASE 2 · RIPARAZIONE</text>
+        <text x="264" y="116" font-size="10" fill="#4a4550">rigenerazione · gg ~5–7 →</text>
+        <text x="264" y="140" font-size="10.5" fill="#16141a">• Laser alta potenza (PBM)</text>
+        <text x="264" y="156" font-size="10.5" fill="#16141a">• Crio −40 °C come “veicolo”</text>
+        <text x="264" y="172" font-size="10.5" fill="#16141a">• Terapia manuale, massaggio,</text>
+        <text x="274" y="186" font-size="10.5" fill="#16141a">esercizio terapeutico</text>
+
+        <rect x="444" y="78" width="200" height="120" rx="10" fill="#fcebe2"/>
+        <text x="456" y="100" font-size="12" font-weight="800" fill="#9a3f16">FASE 3 · RIMODELLAMENTO</text>
+        <text x="456" y="116" font-size="10" fill="#4a4550">adattamento · ~g 21 → RTT/RTP</text>
+        <text x="456" y="140" font-size="10.5" fill="#16141a">• TECAR a frequenza variabile</text>
+        <text x="456" y="156" font-size="10.5" fill="#16141a">• Laser alta potenza</text>
+        <text x="456" y="172" font-size="10.5" fill="#16141a">• Onde d’urto radiali (casi scelti)</text>
+        <text x="456" y="186" font-size="10.5" fill="#16141a">• Recupero del gesto specifico</text>
+      </g>
+      <g fill="#fff" stroke="#16141a" stroke-width="2"><circle cx="150" cy="60" r="5"/><circle cx="342" cy="60" r="5"/><circle cx="544" cy="60" r="5"/></g>
+    </svg>
+    <figcaption><b>Figura 0.</b> Filo conduttore dell’intera relazione: tre fasi biologiche, tre obiettivi, tre gruppi di energie fisiche, sempre inseriti in un lavoro di équipe (medico, fisioterapista, preparatore).</figcaption>
+  </figure>
+
+  <div class="box warn">
+    <div class="lbl">Nota sulla fonte</div>
+    <p>Questa dispensa è stata ricostruita dalla <strong>trascrizione automatica</strong> dell’audio della sessione (≈ 110 min), registrato in sala. Alcuni nomi propri (persone, aziende) e alcuni numeri erano poco intelligibili e sono stati omessi o riportati con cautela. I box “Approfondimento” sono integrazioni esterne al congresso. Le tecnologie descritte come “gold standard” riflettono le scelte e l’esperienza dello staff relatore e non sostituiscono linee guida o valutazioni individuali. La parte finale della sessione, una dimostrazione pratica di laserterapia in diretta, non è riportata perché non ricostruibile dall’audio.</p>
+  </div>
+</section>
+
+<!-- ================= CAP 1 ================= -->
+<section class="chapter">
+  <div class="ch-head">
+    <div class="ch-num dark">01</div>
+    <div class="ch-title"><div class="eyebrow">Slide nera · normativa</div><h2>Gli elettromedicali: le regole del gioco</h2></div>
+  </div>
+
+  <p class="lead">Prima di parlare di biologia e di parametri c’è una domanda da porsi: <strong>posso usare questa macchina, su questo paziente, per questo scopo?</strong> La risposta non la dà Google e non la dà il collega: la dà il Ministero della Salute.</p>
+
+  <h3>Che cos’è un dispositivo elettromedicale</h3>
+  <p>È un dispositivo che usa la <strong>corrente elettrica</strong> per svolgere una <strong>funzione medica</strong>. Nella categoria rientrano apparecchi molto diversi: risonanza magnetica, ecografo, elettrocardiografo, onde d’urto, TECAR, laser. Sono tutti <em>elettro</em>‑medicali e seguono una normativa rigida, come i farmaci: anche sul piano penale le responsabilità sono paragonabili.</p>
+
+  <div class="cols">
+    <div>
+      <h4>Il parallelo con il farmaco</h4>
+      <table>
+        <tr><th>Farmaco</th><th>Elettromedicale</th></tr>
+        <tr><td><strong>AIC</strong>: Autorizzazione all’Immissione in Commercio</td><td>Marcatura <strong>CE</strong> con numero dell’organismo notificato</td></tr>
+        <tr><td>Bugiardino</td><td><strong>Manuale d’uso</strong> e <strong>dichiarazione di conformità</strong></td></tr>
+        <tr><td>Lotto</td><td><strong>Numero di serie</strong> unico al mondo</td></tr>
+        <tr><td>Farmacovigilanza</td><td>Vigilanza ministeriale e database <strong>EUDAMED</strong></td></tr>
+      </table>
+    </div>
+    <div>
+      <h4>Chi decide cosa</h4>
+      <p>Il <strong>fabbricante</strong>, insieme al <strong>Ministero della Salute</strong> e con un <strong>organismo notificato</strong> che certifica (es. IMQ in Italia, TÜV in Germania), stabilisce:</p>
+      <ul>
+        <li>il <strong>campo d’impiego</strong> (riabilitazione, monitoraggio, diagnostica…);</li>
+        <li>l’<strong>ambito specifico</strong> (rehab, dermatologia, vascolare, chirurgia…);</li>
+        <li>la <strong>destinazione d’uso</strong>: <em>chi</em> lo può utilizzare.</li>
+      </ul>
+    </div>
+  </div>
+
+  <figure class="fig-card">
+    <svg viewBox="0 0 680 250" role="img" aria-label="Schema degli attori della certificazione e della targhetta di un dispositivo">
+      <g font-family="Inter">
+        <!-- actors -->
+        <rect x="10" y="20" width="150" height="54" rx="8" fill="#17151b"/>
+        <text x="85" y="44" fill="#fff" font-size="12" font-weight="800" text-anchor="middle">Ministero della Salute</text>
+        <text x="85" y="61" fill="#f4a6c1" font-size="9.5" text-anchor="middle">autorizza · vigila · legifera</text>
+        <rect x="10" y="98" width="150" height="54" rx="8" fill="#fff" stroke="#17151b" stroke-width="1.5"/>
+        <text x="85" y="122" fill="#16141a" font-size="12" font-weight="800" text-anchor="middle">Fabbricante</text>
+        <text x="85" y="139" fill="#4a4550" font-size="9.5" text-anchor="middle">progetta · prevede l’uso</text>
+        <rect x="10" y="176" width="150" height="54" rx="8" fill="#fff" stroke="#17151b" stroke-width="1.5"/>
+        <text x="85" y="200" fill="#16141a" font-size="12" font-weight="800" text-anchor="middle">Organismo notificato</text>
+        <text x="85" y="217" fill="#4a4550" font-size="9.5" text-anchor="middle">certifica (IMQ, TÜV…)</text>
+        <!-- arrows to device -->
+        <g stroke="#d6336c" stroke-width="2" fill="none">
+          <path d="M160 47 C210 47 210 125 250 125"/><path d="M160 125 L250 125"/><path d="M160 203 C210 203 210 125 250 125"/>
+        </g>
+        <!-- plate -->
+        <rect x="250" y="55" width="220" height="140" rx="6" fill="#f7f5f8" stroke="#16141a" stroke-width="1.5"/>
+        <rect x="250" y="55" width="220" height="24" rx="6" fill="#16141a"/>
+        <text x="262" y="72" fill="#fff" font-size="10.5" font-weight="700">TARGHETTA DEL DISPOSITIVO</text>
+        <text x="264" y="102" font-size="10" fill="#4a4550">Modello</text><text x="340" y="102" font-size="10.5" font-weight="700" fill="#16141a">nome commerciale</text>
+        <text x="264" y="122" font-size="10" fill="#4a4550">Fabbricante</text><text x="340" y="122" font-size="10.5" font-weight="700" fill="#16141a">ragione sociale</text>
+        <text x="264" y="142" font-size="10" fill="#4a4550">S/N</text><text x="340" y="142" font-size="10.5" font-weight="700" fill="#16141a" font-family="JetBrains Mono">unico al mondo</text>
+        <text x="264" y="172" font-size="22" font-weight="800" fill="#16141a">CE</text><text x="300" y="172" font-size="16" font-weight="700" fill="#16141a" font-family="JetBrains Mono">0051</text>
+        <text x="360" y="170" font-size="8.5" fill="#4a4550">n° organismo</text><text x="360" y="181" font-size="8.5" fill="#4a4550">notificato</text>
+        <!-- eudamed -->
+        <path d="M470 125 L520 125" stroke="#16141a" stroke-width="2"/>
+        <rect x="520" y="70" width="150" height="110" rx="8" fill="#e8ebf6"/>
+        <text x="595" y="96" font-size="13" font-weight="800" fill="#4a5a9e" text-anchor="middle">EUDAMED</text>
+        <text x="595" y="114" font-size="9.5" fill="#16141a" text-anchor="middle">database europeo</text>
+        <text x="595" y="136" font-size="9.5" fill="#4a4550" text-anchor="middle">cerca per nome/fabbricante:</text>
+        <text x="595" y="151" font-size="9.5" fill="#4a4550" text-anchor="middle">chi certifica, per cosa,</text>
+        <text x="595" y="166" font-size="9.5" fill="#4a4550" text-anchor="middle">per chi</text>
+      </g>
+    </svg>
+    <figcaption><b>Figura 1.1.</b> La “carta d’identità” del dispositivo. CE 0051 è l’esempio mostrato in aula (una TECAR). Inserendo nome del modello o fabbricante su EUDAMED si risale alla documentazione depositata, uguale in tutti gli Stati membri.</figcaption>
+  </figure>
+
+  <h3>Le cinque cose che contano davvero</h3>
+  <div class="cols">
+    <div>
+      <ol>
+        <li><strong>Certificazione.</strong> Un dispositivo senza marcatura e numero (es. una radiofrequenza estetica spacciata per TECAR o un ultrasuono cavitazionale spacciato per ultrasuonoterapia) <strong>non adempie la prescrizione medica</strong>, oltre al problema deontologico.</li>
+        <li><strong>Tracciabilità.</strong> Fabbricante e Ministero devono sapere che il dispositivo con quel numero di serie è tuo. Se lo compri usato, comunica il passaggio al fabbricante.</li>
+        <li><strong>Integrità.</strong> Mai modificarlo (cavo sostituito dall’elettricista, manipolo “aggiustato” dal fabbro). Se l’hai usato integro e conforme alle indicazioni, in caso di evento avverso rispondono fabbricante e Ministero.</li>
+      </ol>
+    </div>
+    <div>
+      <ol start="4">
+        <li><strong>Documenti.</strong> In un’ispezione dei NAS si guarda prima la targhetta e poi la <strong>dichiarazione di conformità</strong> (chi ha certificato, campo d’impiego, destinazione d’uso). Il relatore la paragona al libretto di circolazione. Le <strong>controindicazioni giuridicamente valide sono quelle del manuale</strong> (es. pacemaker con TECAR); solo il medico può eventualmente assumersi una scelta diversa, per iscritto.</li>
+        <li><strong>Verifica di sicurezza elettrica</strong> (norma CEI EN 62353), almeno <strong>ogni 2 anni</strong>. È come la revisione dell’auto: non misura <em>quanto</em> eroga il dispositivo, ma controlla che una scarica anomala (“primo guasto”) non folgori paziente o operatore. Per i <strong>laser</strong> è prevista in più una funzione di <strong>calibrazione</strong> della potenza.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="box nera">
+    <div class="lbl">Il messaggio della slide nera</div>
+    <p>“Non è la sentenza del 1982 trovata su Google”: chi autorizza, dice chi può usare e per cosa è il <strong>Ministero della Salute</strong>, tramite la documentazione depositata. Gli Ordini (OFI territoriali e FNOFI, che nel 2024 ha pubblicato un documento sulle onde d’urto) sono il riferimento per orientarsi su questa normativa.</p>
+  </div>
+</section>
+
+<!-- ================= CAP 2 ================= -->
+<section class="chapter">
+  <div class="ch-head">
+    <div class="ch-num dark">02</div>
+    <div class="ch-title"><div class="eyebrow">Slide nera · fisica</div><h2>Se è misurabile, è fisico</h2></div>
+  </div>
+
+  <div class="quote">“Se è misurabile è fisico, e lo posso inserire nel progetto riabilitativo. Se non è misurabile è fantascientifico.”<small>IL RELATORE TECNICO, SUI DISPOSITIVI “BREVETTATI CON LA NASA”</small></div>
+
+  <p>Già i manuali universitari di terapia fisica (il relatore cita un classico la cui ultima edizione è del 2007) classificavano i mezzi fisici in base alla <strong>forma di energia misurabile</strong>, non al nome commerciale. Una vecchia “radarterapia”, per esempio, era un campo elettromagnetico che scaldava, cioè una diatermia. I mezzi fisici non sono “dispositivi di business”: sono <strong>farmaci fisici</strong>, strumenti al servizio della fisioterapia. Vanno conosciuti per usarli al momento giusto e nel modo giusto, e a volte vanno lasciati spenti.</p>
+
+  <h3>Il principio: “facciamo cose semplici”</h3>
+  <figure>
+    <svg viewBox="0 0 680 188" role="img" aria-label="Le cinque energie fisiche con la loro natura e unità di misura">
+      <g font-family="Inter" text-anchor="middle">
+        <!-- card template x positions 0,136,272,408,544 width 128 -->
+        <g transform="translate(4,0)">
+          <rect width="128" height="186" rx="10" fill="#e6f1f8"/>
+          <g transform="translate(64,52)" stroke="#3f86b8" stroke-width="3" stroke-linecap="round"><line x1="0" y1="-26" x2="0" y2="26"/><line x1="-22" y1="-13" x2="22" y2="13"/><line x1="-22" y1="13" x2="22" y2="-13"/><path d="M-6 -20 L0 -14 L6 -20 M-6 20 L0 14 L6 20" fill="none"/></g>
+          <text x="64" y="104" font-size="13" font-weight="800" fill="#16141a">Crioterapia</text>
+          <text x="64" y="122" font-size="10.5" fill="#4a4550">è <tspan font-weight="700">FREDDO</tspan></text>
+          <text x="64" y="160" font-size="9" fill="#7c7584">si misura in</text>
+          <text x="64" y="178" font-size="13" font-weight="800" fill="#255f86">°C</text>
+        </g>
+        <g transform="translate(140,0)">
+          <rect width="128" height="186" rx="10" fill="#f1eff3"/>
+          <g transform="translate(64,52)" stroke="#17151b" stroke-width="3" fill="none" stroke-linecap="round"><path d="M-30 0 q5 -18 10 0 t10 0 t10 0 t10 0 t10 0 t10 0"/></g>
+          <text x="64" y="104" font-size="13" font-weight="800" fill="#16141a">Ultrasuoni</text>
+          <text x="64" y="122" font-size="10.5" fill="#4a4550">è un <tspan font-weight="700">SUONO</tspan></text>
+          <text x="64" y="138" font-size="9" fill="#7c7584">oltre la soglia udibile</text>
+          <text x="64" y="160" font-size="9" fill="#7c7584">si misura in</text>
+          <text x="64" y="178" font-size="13" font-weight="800" fill="#16141a">MHz</text>
+        </g>
+        <g transform="translate(276,0)">
+          <rect width="128" height="186" rx="10" fill="#fde8f0"/>
+          <g transform="translate(64,52)"><circle r="10" fill="#d6336c"/><g stroke="#d6336c" stroke-width="3" stroke-linecap="round"><line x1="0" y1="-26" x2="0" y2="-16"/><line x1="0" y1="16" x2="0" y2="26"/><line x1="-26" y1="0" x2="-16" y2="0"/><line x1="16" y1="0" x2="26" y2="0"/><line x1="-18" y1="-18" x2="-12" y2="-12"/><line x1="12" y1="12" x2="18" y2="18"/><line x1="-18" y1="18" x2="-12" y2="12"/><line x1="12" y1="-12" x2="18" y2="-18"/></g></g>
+          <text x="64" y="104" font-size="13" font-weight="800" fill="#16141a">Laserterapia</text>
+          <text x="64" y="122" font-size="10.5" fill="#4a4550">è una <tspan font-weight="700">LUCE</tspan></text>
+          <text x="64" y="138" font-size="9" fill="#7c7584">non presente in natura</text>
+          <text x="64" y="160" font-size="9" fill="#7c7584">si misura in</text>
+          <text x="64" y="178" font-size="13" font-weight="800" fill="#9c1c4b">nm</text>
+        </g>
+        <g transform="translate(412,0)">
+          <rect width="128" height="186" rx="10" fill="#fcebe2"/>
+          <g transform="translate(64,52)"><path d="M6 -28 L-12 4 L0 4 L-6 28 L14 -6 L2 -6 Z" fill="#d9602b"/></g>
+          <text x="64" y="104" font-size="13" font-weight="800" fill="#16141a">TECAR</text>
+          <text x="64" y="122" font-size="10.5" fill="#4a4550">è una <tspan font-weight="700">CORRENTE</tspan></text>
+          <text x="64" y="138" font-size="9" fill="#7c7584">a radiofrequenza → calore</text>
+          <text x="64" y="160" font-size="9" fill="#7c7584">si misura in</text>
+          <text x="64" y="178" font-size="13" font-weight="800" fill="#9a3f16">kHz</text>
+        </g>
+        <g transform="translate(548,0)">
+          <rect width="128" height="186" rx="10" fill="#e8ebf6"/>
+          <g transform="translate(64,52)" fill="none" stroke="#4a5a9e" stroke-width="3" stroke-linecap="round"><path d="M-8 -22 a24 24 0 0 1 0 44"/><path d="M2 -16 a18 18 0 0 1 0 32"/><path d="M12 -10 a12 12 0 0 1 0 20"/><circle cx="-18" cy="0" r="5" fill="#4a5a9e"/></g>
+          <text x="64" y="104" font-size="13" font-weight="800" fill="#16141a">Onde d’urto</text>
+          <text x="64" y="122" font-size="10.5" fill="#4a4550">è un’<tspan font-weight="700">ONDA MECCANICA</tspan></text>
+          <text x="64" y="138" font-size="9" fill="#7c7584">(qui: radiali)</text>
+          <text x="64" y="160" font-size="9" fill="#7c7584">frequenza in</text>
+          <text x="64" y="178" font-size="13" font-weight="800" fill="#4a5a9e">Hz</text>
+        </g>
+      </g>
+    </svg>
+    <figcaption><b>Figura 2.1.</b> Il primo passo è chiedersi quale energia fisica eroga davvero il dispositivo.</figcaption>
+  </figure>
+
+  <div class="box nera">
+    <div class="lbl">Il “brainstorming” in aula: che energia eroga la TECAR?</div>
+    <p>La sala risponde “termica”. È vero che la TECAR <strong>produce</strong> calore, ma ciò che eroga è una <strong>corrente</strong>: la corrente di rete passa in un trasformatore e diventa <strong>radiofrequenza</strong>, che attraversa il tessuto, genera un campo elettromagnetico e quindi calore. “Sto elettrificando il quadricipite”, e il quadricipite non “si ricarica” come un telefono. Sulla luce, invece, vedremo che qualcosa nella cellula si “ricarica” davvero.</p>
+  </div>
+
+  <h3>Hertz: l’unità che torna ovunque</h3>
+  <div class="cols">
+    <div>
+      <p>L’<strong>hertz (Hz)</strong> indica <strong>quante volte in un secondo</strong> si ripete un fenomeno fisico. Vale per suono, luce e corrente. Il Sistema Internazionale (“si studia in quarta elementare e poi si dimentica”) è <strong>l’inglese delle energie fisiche</strong>.</p>
+      <p><strong>1 MHz</strong> = un milione di vibrazioni al secondo: troppo veloce per l’orecchio, per questo è <em>ultra</em>‑suono.</p>
+    </div>
+    <div>
+      <figure class="fig-card" style="margin-top:0">
+        <svg viewBox="0 0 320 150" style="max-height:32mm" role="img" aria-label="Onde a 1, 2 e 3 hertz in un secondo">
+          <g font-family="Inter" font-size="10" fill="#4a4550">
+            <text x="0" y="30">1 Hz</text><text x="0" y="78">2 Hz</text><text x="0" y="126">3 Hz</text>
+          </g>
+          <g fill="none" stroke-width="2.2" stroke-linecap="round">
+            <path d="M40 30 q 70 -22 140 0 t 140 0" stroke="#f4a6c1"/>
+            <path d="M40 78 q 17.5 -22 35 0 t 35 0 t 35 0 t 35 0 t 35 0 t 35 0 t 35 0 t 35 0" stroke="#d6336c" transform="scale(1)"/>
+            <path d="M40 126 q 11.7 -22 23.3 0 t 23.3 0 t 23.3 0 t 23.3 0 t 23.3 0 t 23.3 0 t 23.3 0 t 23.3 0 t 23.3 0 t 23.3 0 t 23.3 0 t 23.3 0" stroke="#9c1c4b"/>
+          </g>
+          <line x1="40" y1="142" x2="320" y2="142" stroke="#16141a"/>
+          <text x="40" y="150" font-family="Inter" font-size="8" fill="#7c7584">0 s</text><text x="300" y="150" font-family="Inter" font-size="8" fill="#7c7584">1 s</text>
+        </svg>
+        <figcaption>Più cicli nello stesso secondo = frequenza più alta.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CAP 3 ================= -->
+<section class="chapter">
+  <div class="ch-head">
+    <div class="ch-num">03</div>
+    <div class="ch-title"><div class="eyebrow">Slide rosa · biologia</div><h2>Biologia della lesione muscolare</h2></div>
+  </div>
+
+  <p class="lead">Per fini didattici la guarigione del muscolo si divide in <strong>tre fasi</strong>. Alcuni ne descrivono quattro, ma tre si capiscono meglio. Le immagini istologiche proiettate (giorni 2–3, 5–7 e 21) mostrano una fibra che cambia radicalmente: dal caos iniziale a una fibra cicatrizzata, organizzata ed elastica.</p>
+
+  <figure class="fig-card">
+    <svg viewBox="0 0 680 230" role="img" aria-label="Tre fasi di guarigione della fibra muscolare, dalla rottura alla fibra rimodellata">
+      <g font-family="Inter">
+        <!-- Phase 1 -->
+        <rect x="0" y="0" width="220" height="230" rx="10" fill="#fff5f8"/>
+        <text x="14" y="24" font-size="11" font-weight="800" fill="#b42318">1 · ACUTA</text>
+        <text x="14" y="40" font-size="9.5" fill="#4a4550">distruzione · giorni 0–3</text>
+        <g stroke-linecap="round" stroke-width="12">
+          <path d="M20 80 H95" stroke="#f4a6c1"/><path d="M125 80 H200" stroke="#f4a6c1"/>
+          <path d="M20 100 H88" stroke="#f4a6c1"/><path d="M132 100 H200" stroke="#f4a6c1"/>
+          <path d="M20 120 H100" stroke="#f4a6c1"/><path d="M120 120 H200" stroke="#f4a6c1"/>
+        </g>
+        <ellipse cx="110" cy="100" rx="30" ry="36" fill="#b42318" fill-opacity=".25"/>
+        <g fill="#b42318"><circle cx="104" cy="88" r="3"/><circle cx="116" cy="106" r="3"/><circle cx="108" cy="116" r="2.5"/><circle cx="118" cy="90" r="2"/></g>
+        <text x="14" y="160" font-size="9.5" fill="#16141a">• infiammazione ed <tspan font-weight="700">ematoma</tspan></text>
+        <text x="14" y="176" font-size="9.5" fill="#16141a">• edema</text>
+        <text x="14" y="192" font-size="9.5" fill="#16141a">• attivazione delle <tspan font-weight="700">cellule satelliti</tspan></text>
+
+        <!-- Phase 2 -->
+        <rect x="230" y="0" width="220" height="230" rx="10" fill="#fdf0f5"/>
+        <text x="244" y="24" font-size="11" font-weight="800" fill="#9c1c4b">2 · RIPARAZIONE</text>
+        <text x="244" y="40" font-size="9.5" fill="#4a4550">rigenerazione · giorni ~5–7</text>
+        <g stroke-linecap="round" stroke-width="12">
+          <path d="M250 80 H322" stroke="#f4a6c1"/><path d="M358 80 H430" stroke="#f4a6c1"/>
+          <path d="M250 100 H322" stroke="#f4a6c1"/><path d="M358 100 H430" stroke="#f4a6c1"/>
+          <path d="M250 120 H322" stroke="#f4a6c1"/><path d="M358 120 H430" stroke="#f4a6c1"/>
+        </g>
+        <g stroke="#d6336c" stroke-width="3" stroke-linecap="round"><path d="M324 80 H356"/><path d="M324 100 H356" stroke-dasharray="5 4"/><path d="M324 120 H356"/></g>
+        <path d="M312 138 q20 -6 44 4" stroke="#b42318" stroke-width="1.6" fill="none"/>
+        <text x="244" y="160" font-size="9.5" fill="#16141a">• miotubi e nuove fibre</text>
+        <text x="244" y="176" font-size="9.5" fill="#16141a">• <tspan font-weight="700">angiogenesi</tspan></text>
+        <text x="244" y="192" font-size="9.5" fill="#16141a">• obiettivo: disposizione <tspan font-weight="700">lineare</tspan></text>
+
+        <!-- Phase 3 -->
+        <rect x="460" y="0" width="220" height="230" rx="10" fill="#f3f8f5"/>
+        <text x="474" y="24" font-size="11" font-weight="800" fill="#2f8a5b">3 · RIMODELLAMENTO</text>
+        <text x="474" y="40" font-size="9.5" fill="#4a4550">adattamento · ~giorno 21</text>
+        <g stroke-linecap="round" stroke-width="12" stroke="#f4a6c1">
+          <path d="M480 80 H660"/><path d="M480 100 H660"/><path d="M480 120 H660"/>
+        </g>
+        <g stroke="#d6336c" stroke-width="12" stroke-linecap="butt" stroke-opacity=".55"><path d="M562 80 H578"/><path d="M562 100 H578"/><path d="M562 120 H578"/></g>
+        <text x="474" y="160" font-size="9.5" fill="#16141a">• cicatrice <tspan font-weight="700">elastica e lineare</tspan></text>
+        <text x="474" y="176" font-size="9.5" fill="#16141a">• return to training</text>
+        <text x="474" y="192" font-size="9.5" fill="#16141a">• return to play</text>
+      </g>
+    </svg>
+    <figcaption><b>Figura 3.1.</b> Le tre fasi didattiche. Il rosso indica la fase più delicata, quella acuta. Tutta la strategia terapeutica mira a una riparazione <b>lineare ed elastica</b>, non a una cicatrice rigida e disorganizzata.</figcaption>
+  </figure>
+
+  <h3>La metafora del ponte</h3>
+  <div class="cols">
+    <div>
+      <p>Una fibra muscolare che si interrompe è come <strong>un ponte crollato</strong>. Il lavoro quotidiano dell’équipe è creare il “collante” che ricostruisce la campata <strong>nel modo più lineare e perfetto possibile</strong>.</p>
+      <p>Se la ricostruzione è storta, cioè si forma una cicatrice rigida e “brutta”, il ponte regge ma diventa un punto debole. Ne derivano recidive più frequenti, un muscolo rigido e un atleta che non esprime il 100% della performance.</p>
+    </div>
+    <figure style="margin-top:0">
+      <svg viewBox="0 0 320 150" role="img" aria-label="Ponte crollato e ponte ricostruito">
+        <g font-family="Inter" font-size="9.5" font-weight="700">
+          <text x="10" y="14" fill="#b42318">prima</text><text x="170" y="14" fill="#2f8a5b">dopo la riparazione</text>
+        </g>
+        <path d="M0 130 q40 -20 80 0 t80 0" fill="#e6f1f8"/><path d="M160 130 q40 -20 80 0 t80 0" fill="#e6f1f8"/>
+        <!-- broken bridge -->
+        <g fill="#17151b">
+          <rect x="18" y="60" width="10" height="70"/><rect x="122" y="60" width="10" height="70"/>
+          <rect x="6" y="52" width="58" height="9" transform="rotate(8 64 56)"/>
+          <rect x="90" y="52" width="54" height="9" transform="rotate(-10 90 56)"/>
+        </g>
+        <g fill="#f4a6c1"><rect x="62" y="106" width="16" height="6" transform="rotate(25 70 108)"/><rect x="78" y="116" width="12" height="5"/></g>
+        <!-- rebuilt -->
+        <g fill="#17151b">
+          <rect x="178" y="60" width="10" height="70"/><rect x="282" y="60" width="10" height="70"/>
+          <rect x="166" y="52" width="138" height="9"/>
+        </g>
+        <rect x="222" y="52" width="48" height="9" fill="#d6336c"/>
+        <path d="M188 61 q47 40 94 0" stroke="#17151b" stroke-width="3" fill="none"/>
+      </svg>
+      <figcaption>La campata centrale rosa è il “collante”: tessuto nuovo che deve allinearsi al resto.</figcaption>
+    </figure>
+  </div>
+
+  <h3>Le cellule satelliti: le staminali del muscolo</h3>
+  <p>Il relatore clinico si sofferma su un’immagine “a cui ho dedicato mesi della mia vita”: il ciclo della cellula satellite. Si trova in stato <strong>quiescente</strong> (dormiente) sotto la lamina basale. Quando la fibra si lesiona si “scatena l’inferno”: la lesione la <strong>attiva</strong>, la cellula <strong>prolifera</strong> e diventa <strong>mioblasto</strong>, e i mioblasti migrano verso la fibra danneggiata.</p>
+
+  <figure class="fig-card">
+    <svg viewBox="0 0 680 190" role="img" aria-label="Ciclo della cellula satellite: quiescenza, attivazione, proliferazione, fusione o nuova fibra, ritorno alla quiescenza">
+      <defs><marker id="a2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10z" fill="#9c1c4b"/></marker></defs>
+      <g font-family="Inter" text-anchor="middle">
+        <g transform="translate(60,80)"><ellipse rx="44" ry="16" fill="#f4a6c1" fill-opacity=".45"/><circle r="10" fill="#7c7584"/><text y="44" font-size="10.5" font-weight="800" fill="#16141a">Quiescente</text><text y="58" font-size="9" fill="#4a4550">“dormiente”</text></g>
+        <g transform="translate(185,80)"><circle r="14" fill="#d6336c"/><g stroke="#d6336c" stroke-width="2"><line x1="-22" y1="0" x2="-17" y2="0"/><line x1="17" y1="0" x2="22" y2="0"/><line x1="0" y1="-22" x2="0" y2="-17"/><line x1="0" y1="17" x2="0" y2="22"/></g><text y="44" font-size="10.5" font-weight="800" fill="#16141a">Attivata</text><text y="58" font-size="9" fill="#4a4550">dal trauma</text></g>
+        <g transform="translate(305,80)"><circle cx="-10" cy="-6" r="9" fill="#d6336c"/><circle cx="10" cy="-6" r="9" fill="#d6336c"/><circle cx="0" cy="10" r="9" fill="#d6336c"/><text y="44" font-size="10.5" font-weight="800" fill="#16141a">Proliferazione</text><text y="58" font-size="9" fill="#4a4550">→ mioblasti</text></g>
+        <g transform="translate(470,40)"><rect x="-60" y="-12" width="120" height="24" rx="12" fill="#f4a6c1"/><circle cx="36" r="8" fill="#d6336c"/><text y="30" font-size="10" font-weight="800" fill="#2f8a5b">Fusione con la fibra esistente</text><text y="43" font-size="9" fill="#4a4550">rigenerazione / ipertrofia ✔</text></g>
+        <g transform="translate(470,128)"><rect x="-30" y="-9" width="60" height="18" rx="9" fill="#f4a6c1" fill-opacity=".6"/><text y="28" font-size="10" font-weight="800" fill="#7c7584">Nuova fibra (iperplasia?)</text><text y="41" font-size="9" fill="#4a4550">ancora dibattuta</text></g>
+        <g transform="translate(625,80)"><circle r="10" fill="#7c7584"/><text y="44" font-size="10.5" font-weight="800" fill="#16141a">Ritorno alla</text><text y="58" font-size="10.5" font-weight="800" fill="#16141a">quiescenza</text></g>
+      </g>
+      <g stroke="#9c1c4b" stroke-width="2" fill="none" marker-end="url(#a2)">
+        <path d="M108 80 H165"/><path d="M203 80 H280"/><path d="M330 70 C370 50 390 42 405 42"/><path d="M330 90 C370 115 400 128 435 128"/><path d="M532 44 C580 50 600 60 612 68"/>
+      </g>
+      <text x="340" y="182" text-anchor="middle" font-family="Inter" font-size="9" fill="#7c7584">Il ritorno alla quiescenza conserva la “riserva staminale” del muscolo per eventuali traumi futuri</text>
+    </svg>
+    <figcaption><b>Figura 3.2.</b> Il percorso “che vogliamo” è la fusione con la fibra esistente (rigenerazione e ipertrofia). Una quota di cellule potrebbe dare fibre nuove (iperplasia): nell’uomo resta un tema dibattuto e senza evidenze solide.</figcaption>
+  </figure>
+
+  <div class="box deep">
+    <div class="lbl">Approfondimento · non dal congresso</div>
+    <p>Le cellule satelliti si identificano con il marcatore <strong>Pax7</strong>. L’attivazione è guidata da segnali della nicchia infiammatoria: i macrofagi M1 nelle prime fasi, poi i macrofagi M2 pro‑rigenerativi. L’equilibrio tra rigenerazione miogenica e deposizione di collagene da parte dei fibroblasti (fibrosi) determina la qualità della cicatrice. È il motivo biologico per cui il carico progressivo e il timing contano così tanto.</p>
+  </div>
+</section>
+
+<!-- ================= CAP 4 ================= -->
+<section class="chapter">
+  <div class="ch-head">
+    <div class="ch-num">04</div>
+    <div class="ch-title"><div class="eyebrow">Fase 1 · distruzione delle fibre</div><h2>Fase acuta: contenere lo stravaso</h2></div>
+  </div>
+
+  <div class="box rosa">
+    <div class="lbl">Slide rosa · cosa si fa sul calciatore</div>
+    <p><strong>L’errore da non fare in campo:</strong> eseguire test clinici (muscolari, del crociato…) a bordo campo. In quel momento il calciatore va <strong>messo in sicurezza</strong> e portato in infermeria, dove si fa la valutazione.</p>
+    <ul>
+      <li><strong>Esame clinico</strong> + <strong>esame strumentale</strong> (ecografia o, quasi sempre, risonanza magnetica) per dare alla lesione “<strong>nome e cognome</strong>”: grado e sottotipo (1A, 2B…), sede, e quindi <strong>tempistiche</strong> precise. Nel calcio professionistico sono richieste.</li>
+      <li><strong>Compressione, elevazione</strong> e, quando serve, <strong>protezione</strong> con i bastoni canadesi.</li>
+      <li>Obiettivo: <strong>contenere lo stravaso ematico</strong> ed <strong>evitare di riscaldare i tessuti</strong>. Troppo sangue nella lesione prepara un futuro “non carino”: una cicatrice peggiore.</li>
+    </ul>
+  </div>
+
+  <div class="stat">
+    <div><b>−40 °C</b><span>crioterapia ad aria secca<br>fin dal tempo zero</span></div>
+    <div><b>−10 °C</b><span>crio‑ultrasuono, superficie<br>della testina</span></div>
+    <div><b>1 MHz</b><span>ultrasuono a intensità<br>bassissima</span></div>
+    <div><b>0</b><span>terapie termiche<br>in questa fase</span></div>
+  </div>
+
+  <p>Al <strong>tempo zero</strong> si parte con la <strong>crioterapia a −40 °C</strong>, erogata dal dispositivo laser in modalità “solo freddo”. Si aggiunge il <strong>crio‑ultrasuono a −10 °C</strong>, con ultrasuono a <strong>1 MHz a intensità bassissima</strong>, per ottenere vasocostrizione in profondità, effetto antiedemigeno e analgesia sul muscolo lesionato. Tutto <strong>in assenza di terapia termica</strong>.</p>
+
+
+
+  <h3>Perché proprio 1 MHz? La profondità del suono</h3>
+  <p>L’ultrasuono è energia sonora che, attraverso il gel, viene <strong>trasdotta</strong> in energia meccanica nel tessuto. Trasduzione significa trasformazione, non semplice trasmissione. Da misure ripetute in trent’anni, la profondità raggiunta dipende dalla frequenza:</p>
+
+  <figure class="fig-card">
+    <svg viewBox="0 0 680 160" role="img" aria-label="Profondità di emivalore degli ultrasuoni a 1 e 3 MHz in muscolo e tendine">
+      <g font-family="Inter">
+        <g stroke="#ecdfe5"><line x1="90" y1="58" x2="670" y2="58"/><line x1="90" y1="82" x2="670" y2="82"/><line x1="90" y1="106" x2="670" y2="106"/><line x1="90" y1="130" x2="670" y2="130"/></g>
+        <g font-size="8.5" fill="#7c7584" text-anchor="end"><text x="84" y="37">0 mm</text><text x="84" y="61">2 mm</text><text x="84" y="85">4 mm</text><text x="84" y="109">6 mm</text><text x="84" y="133">8 mm</text></g>
+        <rect x="90" y="28" width="580" height="6" fill="#f4a6c1" rx="2"/>
+        <text x="670" y="22" font-size="8.5" fill="#7c7584" text-anchor="end">superficie cutanea</text>
+        <g font-size="11" font-weight="800" fill="#16141a"><text x="140" y="20">1 MHz <tspan font-weight="400" font-size="9.5" fill="#4a4550">· fisioterapia</tspan></text><text x="400" y="20">3 MHz <tspan font-weight="400" font-size="9.5" fill="#4a4550">· estetica (derma)</tspan></text></g>
+        <path d="M140 34 h60 v104 a4 4 0 0 1 -4 4 h-52 a4 4 0 0 1 -4 -4z" fill="#d6336c"/>
+        <path d="M204 34 h60 v70 a4 4 0 0 1 -4 4 h-52 a4 4 0 0 1 -4 -4z" fill="#4a5a9e"/>
+        <path d="M400 34 h60 v32 a4 4 0 0 1 -4 4 h-52 a4 4 0 0 1 -4 -4z" fill="#d6336c"/>
+        <path d="M464 34 h60 v20 a4 4 0 0 1 -4 4 h-52 a4 4 0 0 1 -4 -4z" fill="#4a5a9e"/>
+        <g font-size="10.5" font-weight="800" fill="#16141a" text-anchor="middle"><text x="170" y="156">9 mm</text><text x="234" y="122">6,2 mm</text><text x="430" y="86">3 mm</text><text x="494" y="74">2 mm</text></g>
+        <g font-size="9.5" fill="#16141a"><rect x="560" y="96" width="11" height="11" rx="2" fill="#d6336c"/><text x="577" y="105">muscolo</text><rect x="560" y="114" width="11" height="11" rx="2" fill="#4a5a9e"/><text x="577" y="123">tendine</text></g>
+      </g>
+    </svg>
+    <figcaption><b>Figura 4.1.</b> Profondità di emivalore dell’ultrasuono (i valori “di manuale” citati in aula). Con 3 MHz l’energia resta in superficie: è la frequenza dell’estetista. Se un crio‑ultrasuono eroga 3 MHz “si chiama comunque crio‑ultrasuono”, ma non serve per la lesione muscolare. <b>Conta la misura, non il nome commerciale.</b></figcaption>
+  </figure>
+
+  <div class="box nera">
+    <div class="lbl">Slide nera · le 4 domande per ogni mezzo fisico</div>
+    <p><strong>Perché?</strong> (lo spiega la clinica) · <strong>Quale</strong>, cioè che energia e con quali parametri misurati · <strong>Trappole</strong>: “è paracetamolo o amoxicillina?” Un mezzo fisico può avere lo stesso nome e misure, quindi effetti, completamente diversi · <strong>Tecnica applicativa</strong>, che richiede formazione dedicata.</p>
+  </div>
+
+  <h3>La trappola del freddo: non tutti i “−10 °C” sono uguali</h3>
+  <div class="cols">
+    <div>
+      <p><strong>Gas ad alta pressione a circuito chiuso:</strong> nella testina passa un gas che porta la temperatura interna a <strong>−20 °C</strong> e garantisce sulla superficie d’acciaio <strong>sempre −10 °C</strong>. “Se metto la testina in un forno a 250 °C per la pizza, si raffredda il forno.”</p>
+      <p><strong>Celle/ventole ad aria</strong> (dispositivi più piccoli ed economici): in superficie arrivano a <strong>+5/+6 °C</strong>. Sul braccio sembrano uguali, ma è come un cucchiaio tolto dal frigo: freddo sì, crioterapico no.</p>
+      <p><strong>Trucco pratico:</strong> la temperatura è l’energia più facile da misurare. Basta un <strong>termometro a infrarossi</strong> o a contatto per verificare la propria testina.</p>
+    </div>
+    <figure style="margin-top:0">
+      <svg viewBox="0 0 320 230" role="img" aria-label="Confronto delle temperature di superficie: gas ad alta pressione meno 10, ventole più 5, aria secca meno 40, cute 33 gradi">
+        <g font-family="Inter">
+          <!-- axis: +40 at y=20 to -45 at y=210 ; scale 190/85 = 2.235 px per degree; y(t)=20+(40-t)*2.235 -->
+          <line x1="40" y1="20" x2="40" y2="210" stroke="#16141a"/>
+          <g font-size="8.5" fill="#7c7584" text-anchor="end"><text x="34" y="23">+40</text><text x="34" y="112">0 °C</text><text x="34" y="212">−45</text></g>
+          <line x1="40" y1="109.4" x2="315" y2="109.4" stroke="#16141a" stroke-dasharray="3 3" stroke-opacity=".5"/>
+          <!-- markers -->
+          <g>
+            <circle cx="70" cy="35.6" r="7" fill="#d9602b"/><text x="84" y="39" font-size="9.5" fill="#16141a"><tspan font-weight="800">+33 °C</tspan> cute superficiale</text>
+            <circle cx="70" cy="98.2" r="7" fill="#9bb7cc"/><text x="84" y="92" font-size="9.5" fill="#16141a"><tspan font-weight="800">+5 °C</tspan> testina ad aria/ventole</text><text x="84" y="104" font-size="8.5" fill="#7c7584">“freddo”, non crioterapia</text>
+            <circle cx="70" cy="131.8" r="7" fill="#3f86b8"/><text x="84" y="135" font-size="9.5" fill="#16141a"><tspan font-weight="800">−10 °C</tspan> testina a gas (superficie)</text>
+            <circle cx="70" cy="154.2" r="5" fill="#255f86"/><text x="84" y="158" font-size="8.5" fill="#4a4550">−20 °C circuito interno</text>
+            <circle cx="70" cy="198.9" r="7" fill="#17151b"/><text x="84" y="202" font-size="9.5" fill="#16141a"><tspan font-weight="800">−40 °C</tspan> aria secca, 0% umidità</text>
+          </g>
+        </g>
+      </svg>
+      <figcaption><b>Figura 4.2.</b> Le temperature citate in aula su un’unica scala.</figcaption>
+    </figure>
+  </div>
+
+  <div class="box key">
+    <div class="lbl">Take‑home · Fase 1 (il “calcio di rigore”)</div>
+    <p>Il crio‑ultrasuono utile in questa fase ha il <strong>freddo da gas ad alta pressione (−10 °C in superficie)</strong> e l’<strong>ultrasuono a 1 MHz</strong>. Gli obiettivi sono contenere lo stravaso, ridurre l’edema e dare vasocostrizione profonda. Un dispositivo a +5 °C e 3 MHz dà comunque analgesia di superficie (anche per gate control), ma “non arriva lì”. Il risultato si può ottenere per più strade: questa è quella considerata più diretta.</p>
+  </div>
+
+  <div class="box deep">
+    <div class="lbl">Approfondimento · lettura critica</div>
+    <p>Negli ultimi anni il ruolo del ghiaccio nelle lesioni acute è stato ridimensionato. Il modello <strong>PEACE &amp; LOVE</strong> (Dubois &amp; Esculier, <em>BJSM</em> 2020) mette in guardia da interventi che sopprimono troppo l’infiammazione, perché potrebbero ostacolare la rigenerazione. Le evidenze sul crio‑ultrasuono vengono soprattutto da piccoli studi e dall’esperienza clinica. Per classificare la lesione, i sistemi più usati sono il <strong>Munich consensus</strong> (tipi 1A–4) e la <strong>British Athletics Muscle Injury Classification</strong> (BAMIC, gradi 0–4 con sottotipi a/b/c in base alla sede: miofasciale, muscolo‑tendinea, intratendinea).</p>
+  </div>
+</section>
+
+<!-- ================= CAP 5 ================= -->
+<section class="chapter">
+  <div class="ch-head">
+    <div class="ch-num">05</div>
+    <div class="ch-title"><div class="eyebrow">Fase 2 · riparazione</div><h2>Laserterapia ad alta potenza e fotobiomodulazione</h2></div>
+  </div>
+
+  <div class="box rosa">
+    <div class="lbl">Slide rosa · la fase più sottovalutata</div>
+    <p>“Tutte le fasi sono una più importante dell’altra.” È la fase 2 che decide se il muscolo avrà una cicatrice che regge la performance. La <strong>parola d’ordine è disposizione lineare</strong>, e il relatore insiste: meglio mille volte una riparazione elastica e lineare di una cicatrice rigida, che predispone alle recidive.</p>
+    <ul>
+      <li>L’esame strumentale (RM) in questa fase <strong>non sempre</strong> si ripete. Si fa sempre in ingresso e in uscita.</li>
+      <li>Si inseriscono <strong>terapia manuale, esercizio terapeutico e massoterapia</strong>, sempre combinati con la terapia fisica.</li>
+      <li>Obiettivo cellulare: migliorare la capacità di <strong>differenziazione</strong> per una riparazione il più possibile <strong>lineare</strong>.</li>
+      <li>Strumento: <strong>laser ad alta potenza</strong> per la <strong>fotobiomodulazione</strong>, associato alla <strong>crioterapia</strong>, con <strong>controllo termico</strong>.</li>
+      <li>Effetti ricercati: ↑ <strong>ATP</strong>, ↑ <strong>ossido nitrico</strong>, conversione delle prostaglandine in prostacicline, attivazione del <strong>microcircolo</strong> e stimolo rigenerativo.</li>
+    </ul>
+  </div>
+
+  <div class="quote">“La lesione fortunatamente guarisce da sola. La luce laser <em>accompagna</em> il processo di guarigione, innescando un effetto fotobiomodulante.”<small>IL RELATORE TECNICO</small></div>
+
+  <h3>Il dispositivo “gold standard” descritto</h3>
+  <div class="stat">
+    <div><b>4</b><span>lunghezze d’onda<br>650 · 810 · 980 · 1064 nm</span></div>
+    <div><b>30 W</b><span>potenza<br>(alta potenza)</span></div>
+    <div><b>−40 °C</b><span>crio ad aria secca<br>integrata</span></div>
+    <div><b>TCA</b><span>termocontrollo<br>adattivo</span></div>
+  </div>
+
+  <h3>Una letteratura enorme (e da maneggiare con cura)</h3>
+  <p>La laserterapia è “un piatto facilmente replicabile”: esiste una ricetta, perché è l’energia fisica con più letteratura in assoluto. Cercando su PubMed <em>laser, LED, photobiomodulation</em>, il relatore trova <strong>116.681 articoli</strong>. Nel solo anno 2000 ne erano stati pubblicati <strong>80</strong>; nel 2020, con le stesse parole chiave, molte volte di più. È una crescita esponenziale. L’arma è a doppio taglio: nel mucchio c’è anche ricerca fatta male o fuori target.</p>
+
+  <h3>Il glossario della luce <span class="tag">variabili fisiche</span></h3>
+
+  <div class="cols">
+    <div>
+      <h4>1 · Lunghezza d’onda (nm): il “principio attivo”</h4>
+      <p>Allo spettroscopio la luce appare come un’onda. La <strong>distanza tra due picchi</strong> è la lunghezza d’onda, misurata in <strong>nanometri</strong>. Ci dice <strong>dove</strong> arriva la luce e <strong>cosa</strong> produce: “non si può parlare di laser senza parlare di nanometri”.</p>
+      <h4>2 · Modalità di emissione</h4>
+      <p><strong>Continua</strong> (emetto sempre) oppure <strong>pulsata</strong> (emissione interrotta). La modalità incide sulla potenza effettiva.</p>
+    </div>
+    <div>
+      <h4>3 · Potenza (W): quanti fotoni</h4>
+      <p>È il “volume” della luce. Il parametro giusto è la <strong>potenza media</strong>, non quella di picco. La potenza di picco serve a scopi <strong>analgesici</strong>, non alla fotobiomodulazione.</p>
+      <h4>4 · Energia (J): la dose</h4>
+      <p><strong>J = W × s</strong>. Per esempio 10 W per 10 s in continua fanno 100 J. In un lavoro citato in aula, sulle lesioni muscolari sono stati usati 500 J a 10 W. Se l’emissione è pulsata bisogna conoscere frequenza e duty cycle, <strong>altrimenti il calcolo inganna</strong>.</p>
+    </div>
+  </div>
+
+  <figure class="fig-card">
+    <svg viewBox="0 0 680 200" role="img" aria-label="Potenza di picco e potenza media in emissione continua e pulsata">
+      <g font-family="Inter">
+        <!-- left: continuous -->
+        <text x="20" y="18" font-size="11" font-weight="800" fill="#16141a">Emissione continua</text>
+        <line x1="40" y1="30" x2="40" y2="170" stroke="#16141a"/><line x1="40" y1="170" x2="320" y2="170" stroke="#16141a"/>
+        <g font-size="8.5" fill="#7c7584" text-anchor="end"><text x="34" y="54">10 W</text><text x="34" y="112">5 W</text><text x="34" y="173">0</text></g>
+        <path d="M40 170 V50 H310 V170" fill="#d6336c" fill-opacity=".18" stroke="#d6336c" stroke-width="2.2"/>
+        <text x="175" y="42" text-anchor="middle" font-size="9.5" font-weight="700" fill="#16141a">media = picco = 10 W</text>
+        <text x="180" y="188" text-anchor="middle" font-size="8.5" fill="#7c7584">tempo →</text>
+        <!-- right: pulsed -->
+        <text x="360" y="18" font-size="11" font-weight="800" fill="#16141a">Emissione pulsata (duty 50%)</text>
+        <line x1="380" y1="30" x2="380" y2="170" stroke="#16141a"/><line x1="380" y1="170" x2="660" y2="170" stroke="#16141a"/>
+        <g font-size="8.5" fill="#7c7584" text-anchor="end"><text x="374" y="54">10 W</text><text x="374" y="112">5 W</text><text x="374" y="173">0</text></g>
+        <path d="M380 170 V50 H407 V170 H434 V50 H461 V170 H488 V50 H515 V170 H542 V50 H569 V170 H596 V50 H623 V170 H650" fill="none" stroke="#4a5a9e" stroke-width="2.2"/>
+        <line x1="380" y1="110" x2="655" y2="110" stroke="#d6336c" stroke-width="2.2" stroke-dasharray="6 4"/>
+        <text x="655" y="104" text-anchor="end" font-size="9.5" font-weight="700" fill="#16141a">potenza media = 5 W</text>
+        <text x="600" y="44" text-anchor="end" font-size="9.5" font-weight="700" fill="#16141a">picco = 10 W</text>
+        <text x="520" y="188" text-anchor="middle" font-size="8.5" fill="#7c7584">tempo →</text>
+      </g>
+    </svg>
+    <figcaption><b>Figura 5.1.</b> A parità di “10 W” dichiarati, in un minuto la pulsata con duty 50% eroga metà dei fotoni. Per la fotobiomodulazione conta la <b>potenza media</b>: è quella che entra nel calcolo dei joule.</figcaption>
+  </figure>
+
+  <h3>La finestra terapeutica: la metafora della maglietta</h3>
+  <p>Già a metà degli anni 2000 Hamblin descriveva la <strong>finestra ottica terapeutica</strong>: ogni lunghezza d’onda interagisce in modo diverso con i <strong>cromofori</strong> dei tessuti (acqua, emoglobina, melanina). Per spiegarlo il relatore porta la sala a Mondello, il 15 agosto a mezzogiorno.</p>
+
+  <figure class="fig-card">
+    <svg viewBox="0 0 680 170" role="img" aria-label="Metafora della maglietta: bianca riflette, nera assorbe, vetro trasmette">
+      <g font-family="Inter" text-anchor="middle">
+        <g transform="translate(113,0)">
+          <path d="M-40 40 l20 -14 h40 l20 14 l-10 16 l-10 -6 v60 h-40 v-60 l-10 6z" fill="#ffffff" stroke="#16141a" stroke-width="2"/>
+          <g stroke="#e0a500" stroke-width="2.4" fill="none"><path d="M-60 0 L-10 44"/><path d="M-10 44 L-50 80" stroke-dasharray="4 3"/></g>
+          <text y="136" font-size="11.5" font-weight="800" fill="#16141a">Bianca · RIFLETTE</text>
+          <text y="152" font-size="9.5" fill="#4a4550">foto‑riflettore: la luce torna indietro</text>
+        </g>
+        <g transform="translate(340,0)">
+          <path d="M-40 40 l20 -14 h40 l20 14 l-10 16 l-10 -6 v60 h-40 v-60 l-10 6z" fill="#17151b" stroke="#16141a" stroke-width="2"/>
+          <g stroke="#e0a500" stroke-width="2.4" fill="none"><path d="M-60 0 L-6 50"/></g>
+          <circle cx="-2" cy="58" r="9" fill="#d9602b" fill-opacity=".6"/>
+          <text y="136" font-size="11.5" font-weight="800" fill="#16141a">Nera · ASSORBE</text>
+          <text y="152" font-size="9.5" fill="#4a4550">foto‑accettore: la luce si ferma qui</text>
+        </g>
+        <g transform="translate(567,0)">
+          <path d="M-40 40 l20 -14 h40 l20 14 l-10 16 l-10 -6 v60 h-40 v-60 l-10 6z" fill="#e6f1f8" fill-opacity=".7" stroke="#3f86b8" stroke-width="2" stroke-dasharray="4 3"/>
+          <g stroke="#e0a500" stroke-width="2.4" fill="none"><path d="M-60 0 L40 110"/></g>
+          <text y="136" font-size="11.5" font-weight="800" fill="#16141a">Vetro · TRASMETTE</text>
+          <text y="152" font-size="9.5" fill="#4a4550">trasparente: la luce passa oltre</text>
+        </g>
+      </g>
+    </svg>
+    <figcaption><b>Figura 5.2.</b> Il laser ideale deve “vedere vetro” nei tessuti di transizione (cute, sottocute, acqua) e “vedere la maglietta nera” solo nel bersaglio: il mitocondrio della cellula muscolare. Il CO₂ (10.600 nm) si ferma sotto la pelle perché l’acqua è la sua maglietta nera. L’810 e il 1064 arrivano in profondità.</figcaption>
+  </figure>
+
+  <figure class="fig-card">
+    <svg viewBox="0 0 680 220" role="img" aria-label="Spettro schematico con finestra ottica e le lunghezze d'onda 650, 810, 980 e 1064 nanometri">
+      <g font-family="Inter">
+        <!-- x: 500nm at 40 -> 1200nm at 660 ; px per nm = 620/700 = .8857 -->
+        <rect x="128.6" y="30" width="429" height="150" fill="#fde8f0" rx="4"/>
+        <text x="343" y="48" text-anchor="middle" font-size="10.5" font-weight="800" fill="#9c1c4b">FINESTRA OTTICA TERAPEUTICA (~600–1100 nm)</text>
+        <line x1="40" y1="180" x2="660" y2="180" stroke="#16141a"/>
+        <g font-size="8.5" fill="#7c7584" text-anchor="middle"><text x="40" y="194">500</text><text x="128.6" y="194">600</text><text x="217.1" y="194">700</text><text x="305.7" y="194">800</text><text x="394.3" y="194">900</text><text x="482.9" y="194">1000</text><text x="571.4" y="194">1100</text><text x="660" y="194">1200 nm</text></g>
+        <!-- schematic absorbers -->
+        <path d="M40 60 C80 90 110 140 150 160 C200 172 260 174 330 172 C400 170 440 160 480 150 C520 140 560 120 600 90 C630 70 650 60 660 56" fill="none" stroke="#7c7584" stroke-width="1.6" stroke-dasharray="5 4"/>
+        <text x="612" y="70" font-size="9" fill="#4a4550">assorbimento</text><text x="612" y="81" font-size="9" fill="#4a4550">acqua ↑</text>
+        <text x="46" y="80" font-size="9" fill="#4a4550">emoglobina,</text><text x="46" y="91" font-size="9" fill="#4a4550">melanina ↑</text>
+        <!-- wavelengths -->
+        <g stroke-width="3">
+          <line x1="172.9" y1="60" x2="172.9" y2="180" stroke="#b42318"/>
+          <line x1="314.6" y1="60" x2="314.6" y2="180" stroke="#d6336c"/>
+          <line x1="465.1" y1="60" x2="465.1" y2="180" stroke="#9c1c4b"/>
+          <line x1="522" y1="60" x2="522" y2="180" stroke="#4a5a9e"/>
+        </g>
+        <g font-size="10.5" font-weight="800" fill="#16141a" text-anchor="middle">
+          <text x="172.9" y="212">650</text><text x="314.6" y="212">810</text><text x="465.1" y="212">980</text><text x="522" y="212">1064</text>
+        </g>
+      </g>
+    </svg>
+    <figcaption><b>Figura 5.3.</b> Schema <b>qualitativo</b>: le curve indicano solo la tendenza. Le quattro lunghezze d’onda del dispositivo descritto cadono tutte nella finestra, ma con geometrie di illuminazione diverse. Unire più lunghezze d’onda (oggi fino a 8 in un solo dispositivo) permette di illuminare insieme i tessuti di transizione e il bersaglio profondo.</figcaption>
+  </figure>
+
+  <div class="box nera">
+    <div class="lbl">YAG, CO₂… chiamali in nanometri</div>
+    <p>Un tempo il laser prendeva il nome dal mezzo che generava la luce: <strong>Nd:YAG = 1064 nm</strong>, <strong>CO₂ = 10.600 nm</strong>. Per non confondersi conviene usare i nanometri. Il 1064 penetra meno dell’810 perché l’acqua lo ferma. Per questo, da anni, sulla lesione muscolare il riferimento non è più lo YAG da solo, ma l’<strong>810</strong> o l’810 insieme al 1064. Consiglio pratico: fotografa la <strong>targhetta gialla</strong> del tuo laser, dove è scritta la lunghezza d’onda.</p>
+  </div>
+
+  <h3>L’esperimento al banco ottico: <em>misura et impera</em></h3>
+  <p>Per mettere alla prova la teoria, il relatore applica il metodo galileiano. Monta su un <strong>banco ottico</strong> due teste laser da <strong>5 W</strong> (810 e 1064 nm), ciascuna con collimatore, puntate su un <strong>power meter certificato</strong>, e misura la potenza in arrivo interponendo materiali diversi.</p>
+
+  <div class="cols" style="grid-template-columns:1.25fr 1fr">
+    <figure class="fig-card" style="margin-top:0">
+      <svg viewBox="0 0 380 240" role="img" aria-label="Potenza misurata in watt dopo aria, vetro e vetro più acqua per 810 e 1064 nanometri">
+        <g font-family="Inter">
+          <!-- y: 0 at 200, 5W at 40 ; 32px per W -->
+          <g stroke="#ecdfe5"><line x1="40" y1="40" x2="370" y2="40"/><line x1="40" y1="72" x2="370" y2="72"/><line x1="40" y1="104" x2="370" y2="104"/><line x1="40" y1="136" x2="370" y2="136"/><line x1="40" y1="168" x2="370" y2="168"/></g>
+          <line x1="40" y1="200" x2="370" y2="200" stroke="#16141a"/>
+          <g font-size="8.5" fill="#7c7584" text-anchor="end"><text x="34" y="43">5 W</text><text x="34" y="107">3 W</text><text x="34" y="171">1 W</text><text x="34" y="203">0</text></g>
+          <!-- groups at 60,170,280 ; bar w 40 gap 2 -->
+          <!-- air: 5.09, 5.06 -->
+          <path d="M62 200 V41 a4 4 0 0 1 4 -4 h32 a4 4 0 0 1 4 4 V200z" fill="#d6336c"/>
+          <path d="M104 200 V42 a4 4 0 0 1 4 -4 h32 a4 4 0 0 1 4 4 V200z" fill="#4a5a9e"/>
+          <text x="82" y="32" font-size="9" font-weight="700" fill="#16141a" text-anchor="middle">5,09</text>
+          <text x="124" y="32" font-size="9" font-weight="700" fill="#16141a" text-anchor="middle">5,06</text>
+          <!-- glass: 4.09, 3.97 -->
+          <path d="M172 200 V73 a4 4 0 0 1 4 -4 h32 a4 4 0 0 1 4 4 V200z" fill="#d6336c"/>
+          <path d="M214 200 V77 a4 4 0 0 1 4 -4 h32 a4 4 0 0 1 4 4 V200z" fill="#4a5a9e"/>
+          <text x="192" y="64" font-size="9" font-weight="700" fill="#16141a" text-anchor="middle">4,09</text>
+          <text x="234" y="68" font-size="9" font-weight="700" fill="#16141a" text-anchor="middle">3,97</text>
+          <!-- glass+water: ~3.6 , 0.94 -->
+          <path d="M282 200 V89 a4 4 0 0 1 4 -4 h32 a4 4 0 0 1 4 4 V200z" fill="#d6336c"/>
+          <path d="M324 200 V174 a4 4 0 0 1 4 -4 h32 a4 4 0 0 1 4 4 V200z" fill="#4a5a9e"/>
+          <text x="302" y="80" font-size="9" font-weight="700" fill="#16141a" text-anchor="middle">≈3,6</text>
+          <text x="344" y="164" font-size="9" font-weight="700" fill="#16141a" text-anchor="middle">0,94</text>
+          <g font-size="10" font-weight="700" fill="#16141a" text-anchor="middle"><text x="103" y="216">aria</text><text x="213" y="216">vetro</text><text x="323" y="216">vetro + acqua</text></g>
+          <!-- legend -->
+          <g font-size="9.5" fill="#16141a"><rect x="60" y="226" width="11" height="11" rx="2" fill="#d6336c"/><text x="76" y="235">810 nm</text><rect x="150" y="226" width="11" height="11" rx="2" fill="#4a5a9e"/><text x="166" y="235">1064 nm</text></g>
+        </g>
+      </svg>
+      <figcaption><b>Figura 5.4.</b> Potenza misurata al power meter (partenza: 5 W). Il valore 810 + acqua è ricostruito dal parlato (“perde solo mezzo watt” in più rispetto al vetro).</figcaption>
+    </figure>
+    <div>
+      <ul class="check">
+        <li><strong>Aria:</strong> nessuna perdita (5,09 e 5,06 W sono entro l’errore dello strumento). Per fortuna l’aria non ha la “maglietta nera”.</li>
+        <li><strong>Vetro:</strong> entrambe le luci perdono ~1 W per dispersione.</li>
+        <li><strong>Vetro + acqua:</strong> qui si separano. L’810 perde solo ~0,5 W in più. Il 1064 crolla a <strong>0,94 W</strong>: perde ~3 W nell’acqua, tre volte tanto.</li>
+      </ul>
+      <div class="stat" style="margin-top:2mm">
+        <div><b style="color:#d6336c">~30%</b><span>perdita totale<br>810 nm</span></div>
+        <div><b style="color:#4a5a9e">~82%</b><span>perdita totale<br>1064 nm</span></div>
+      </div>
+      <p style="font-size:9pt;color:var(--ink-2)">Il corpo umano è fatto in gran parte d’acqua. La scelta della lunghezza d’onda cambia moltissimo quanta luce arriva al bersaglio.</p>
+    </div>
+  </div>
+
+  <h3>Il meccanismo: la fotobiomodulazione</h3>
+  <p>Alcune lunghezze d’onda vengono assorbite dalla <strong>citocromo c ossidasi</strong> mitocondriale, un foto‑accettore che per quelle luci è la “maglietta nera”. Oggi ci sono evidenze di fotobiomodulazione su tre tessuti: <strong>miofibrille</strong>, <strong>strutture tenocitarie</strong> e <strong>guaina mielinica</strong> del tessuto nervoso. Non tutte le lunghezze d’onda la innescano e non nella stessa misura: 650, 810 e 980 sì, anche il 1064 ma in proporzione diversa.</p>
+
+  <figure class="fig-card">
+    <svg viewBox="0 0 680 230" role="img" aria-label="Meccanismo di fotobiomodulazione e andamento nelle 48 ore successive">
+      <defs><marker id="a3" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10z" fill="#16141a"/></marker></defs>
+      <g font-family="Inter">
+        <!-- photon -->
+        <path d="M10 60 q8 -12 16 0 t16 0 t16 0 t16 0" fill="none" stroke="#d6336c" stroke-width="2.5"/>
+        <text x="10" y="40" font-size="10" font-weight="700" fill="#9c1c4b">fotone (nm giusti)</text>
+        <path d="M78 60 H112" stroke="#16141a" stroke-width="2" marker-end="url(#a3)"/>
+        <!-- mitochondrion -->
+        <g transform="translate(180,60)">
+          <ellipse rx="64" ry="34" fill="#fde8f0" stroke="#d6336c" stroke-width="2"/>
+          <path d="M-48 0 q8 -20 16 0 t16 0 t16 0 t16 0 t16 0 t16 0" fill="none" stroke="#d6336c" stroke-width="2"/>
+          <circle cx="0" cy="-12" r="7" fill="#17151b"/>
+          <text x="0" y="52" font-size="10" font-weight="800" fill="#16141a" text-anchor="middle">Mitocondrio</text>
+          <text x="0" y="65" font-size="9" fill="#4a4550" text-anchor="middle">citocromo c ossidasi ● = foto‑accettore</text>
+        </g>
+        <path d="M248 60 H282" stroke="#16141a" stroke-width="2" marker-end="url(#a3)"/>
+        <g font-size="10.5" font-weight="800" fill="#16141a">
+          <rect x="288" y="18" width="92" height="24" rx="12" fill="#fff" stroke="#16141a"/><text x="334" y="34" text-anchor="middle">↑ ATP</text>
+          <rect x="288" y="48" width="92" height="24" rx="12" fill="#fff" stroke="#16141a"/><text x="334" y="64" text-anchor="middle">ROS (segnale)</text>
+          <rect x="288" y="78" width="92" height="24" rx="12" fill="#fff" stroke="#16141a"/><text x="334" y="94" text-anchor="middle">↑ NO</text>
+        </g>
+        <text x="10" y="140" font-size="10" fill="#16141a"><tspan font-weight="800">Produrre</tspan> (effetto termico, analgesico): finisce quando spengo.</text>
+        <text x="10" y="158" font-size="10" fill="#16141a"><tspan font-weight="800">Innescare</tspan> (fotobiomodulazione): la cellula continua da sola.</text>
+        <text x="10" y="186" font-size="9.5" fill="#4a4550">Stesso principio dell’abbronzatura: la luce UV stimola</text>
+        <text x="10" y="199" font-size="9.5" fill="#4a4550">il melanocita e la melanina “si vede” il giorno dopo.</text>
+        <!-- 48h curve -->
+        <g transform="translate(410,20)">
+          <line x1="20" y1="170" x2="260" y2="170" stroke="#16141a"/><line x1="20" y1="10" x2="20" y2="170" stroke="#16141a"/>
+          <path d="M20 160 C60 160 70 40 120 36 C170 32 200 150 260 162" fill="#d6336c" fill-opacity=".14" stroke="#d6336c" stroke-width="2.2"/>
+          <line x1="20" y1="10" x2="20" y2="170" stroke="#d6336c" stroke-width="3"/>
+          <text x="26" y="20" font-size="9" fill="#9c1c4b" font-weight="700">seduta laser</text>
+          <g font-size="8.5" fill="#7c7584" text-anchor="middle"><text x="20" y="184">0 h</text><text x="140" y="184">24 h</text><text x="260" y="184">48 h</text></g>
+          <text x="140" y="198" font-size="9.5" fill="#16141a" text-anchor="middle" font-weight="700">migliora · si stabilizza · scende</text>
+          <text x="-2" y="100" font-size="8.5" fill="#7c7584" transform="rotate(-90 -2 100)" text-anchor="middle">metabolismo cellulare</text>
+        </g>
+      </g>
+    </svg>
+    <figcaption><b>Figura 5.5.</b> L’effetto fotobiomodulante migliora il metabolismo di cellule “rallentate” dalla patologia, con maggiore produzione di ATP, ROS e ossido nitrico nelle <b>48 ore successive</b> con andamento a campana. Le miofibrille fanno “quello che sanno già fare, meglio”: ne deriva una cicatrice più lineare ed elastica. Da qui il suggerimento pratico di mantenere il muscolo “laserato” con sedute regolari.</figcaption>
+  </figure>
+
+  <div class="box deep">
+    <div class="lbl">Approfondimento · dose‑risposta bifasica</div>
+    <p>In letteratura la fotobiomodulazione segue una curva <strong>dose‑risposta bifasica</strong> (tipo Arndt‑Schulz, Huang et al., <em>Dose Response</em> 2009): troppa poca energia non ha effetto, troppa può inibire. È un motivo in più per ragionare in <strong>joule</strong> e in <strong>potenza media</strong> invece che in “minuti”. Per dosaggi e lunghezze d’onda esistono raccomandazioni della World Association for Photobiomodulation Therapy (WALT).</p>
+  </div>
+
+  <h3>Il nemico nascosto: il calore</h3>
+  <p>Mentre illumina, l’energia cinetica dei fotoni <strong>scalda</strong>. “Più il laser scalda, meglio è” è una bufala, almeno per la fotobiomodulazione. Il calore porta iperemia e richiamo di liquidi nei tessuti di transizione, e <strong>l’acqua ferma i fotoni</strong>, come un sub che scende negli abissi e ha bisogno dei fari. Un tempo si alternavano micro‑sedute: 2 minuti di laser e 10 di pausa “con la Gazzetta dello Sport”. Oggi c’è la tecnologia.</p>
+
+  <div class="cols">
+    <div>
+      <h4>Termocontrollo adattivo</h4>
+      <p>Come il <strong>cruise control adattivo</strong> dell’auto: il manipolo <strong>legge</strong> la temperatura cutanea e <strong>adatta</strong> in tempo reale l’emissione. Cosa permette:</p>
+      <ul class="check">
+        <li>tenere il manipolo <strong>fermo</strong> su un punto (una lesione muscolare, un punto paravertebrale);</li>
+        <li>trattare in sicurezza su <strong>tatuaggi</strong> e <strong>fototipi scuri</strong>, anche ad alta intensità;</li>
+        <li>integrare la <strong>crio a −40 °C</strong> senza rischiare di scottare il paziente, che col freddo non sente più il caldo.</li>
+      </ul>
+    </div>
+    <figure style="margin-top:0">
+      <svg viewBox="0 0 320 190" role="img" aria-label="Anello di retroazione del termocontrollo adattivo">
+        <defs><marker id="a4" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10z" fill="#d6336c"/></marker></defs>
+        <g font-family="Inter" text-anchor="middle">
+          <rect x="105" y="6" width="110" height="36" rx="18" fill="#17151b"/><text x="160" y="29" font-size="10.5" font-weight="800" fill="#fff">Emissione laser</text>
+          <rect x="215" y="120" width="100" height="44" rx="10" fill="#fde8f0"/><text x="265" y="139" font-size="10" font-weight="800" fill="#16141a">Sensore</text><text x="265" y="153" font-size="9" fill="#4a4550">legge la T cutanea</text>
+          <rect x="5" y="120" width="100" height="44" rx="10" fill="#fde8f0"/><text x="55" y="139" font-size="10" font-weight="800" fill="#16141a">Algoritmo</text><text x="55" y="153" font-size="9" fill="#4a4550">adatta la potenza</text>
+          <g fill="none" stroke="#d6336c" stroke-width="2.2" marker-end="url(#a4)"><path d="M215 26 C270 26 280 80 270 116"/><path d="M212 150 H110"/><path d="M50 116 C40 80 50 26 102 26"/></g>
+          <text x="160" y="94" font-size="10" fill="#4a4550">loop continuo</text>
+        </g>
+      </svg>
+      <figcaption>Il “cruise control” della luce.</figcaption>
+    </figure>
+  </div>
+
+  <h3>Il freddo come veicolo della luce</h3>
+  <div class="cols">
+    <figure class="fig-card" style="margin-top:0">
+      <svg viewBox="0 0 320 190" role="img" aria-label="La crio a meno 40 gradi porta la cute da 33 a 13 gradi in circa 30 secondi">
+        <g font-family="Inter">
+          <!-- y: 40°C at 20, 0 at 170 ; 3.75px/°C -->
+          <line x1="40" y1="20" x2="40" y2="170" stroke="#16141a"/><line x1="40" y1="170" x2="310" y2="170" stroke="#16141a"/>
+          <g font-size="8.5" fill="#7c7584" text-anchor="end"><text x="34" y="49">33 °C</text><text x="34" y="124">13 °C</text><text x="34" y="173">0</text></g>
+          <g stroke="#ecdfe5"><line x1="40" y1="46" x2="310" y2="46"/><line x1="40" y1="121" x2="310" y2="121"/></g>
+          <path d="M40 46 C90 46 110 110 170 119 L300 121" fill="none" stroke="#3f86b8" stroke-width="2.4"/>
+          <circle cx="40" cy="46" r="5" fill="#d9602b"/><circle cx="170" cy="119" r="5" fill="#3f86b8"/>
+          <g font-size="8.5" fill="#7c7584" text-anchor="middle"><text x="40" y="184">0 s</text><text x="170" y="184">~30 s</text></g>
+          <text x="180" y="100" font-size="10" font-weight="800" fill="#16141a">−20 °C in ~30 s</text>
+          <text x="180" y="40" font-size="9.5" fill="#4a4550">crio −40 °C, aria secca</text>
+        </g>
+      </svg>
+      <figcaption><b>Figura 5.6.</b> Valori mostrati in aula (media cutanea 32–35 °C).</figcaption>
+    </figure>
+    <div>
+      <p>La cute superficiale sta tra <strong>32 e 35 °C</strong>. La crio a −40 °C <strong>secca</strong> (0% di umidità) porta la zona da ~33 a ~13 °C in circa <strong>30 secondi</strong>. Laserando su un tessuto a 13 °C invece che a 33 °C ci sono molti meno liquidi e cromofori che ostacolano la luce.</p>
+      <p>Il freddo secco è piacevole e “non mette in fuga il paziente”. Quello umido altera la superficie e maschera la sensazione termica.</p>
+      <div class="quote" style="font-size:12pt">“Il freddo è veicolo della luce laser.”</div>
+    </div>
+  </div>
+
+  <div class="box warn">
+    <div class="lbl">Solo per il medico · l’infiltrazione laser</div>
+    <p>Il sogno è portare la luce <strong>direttamente nella lesione</strong>: sotto guida ecografica si inserisce un ago con una <strong>fibra ottica</strong>, fino a 4–8 cm di profondità. Per destinazione d’uso ministeriale questa metodica è di <strong>esclusiva competenza del medico chirurgo specialista in Medicina Fisica e Riabilitativa</strong>, non del fisioterapista, che usa energia esogena e non invasiva. Nelle intenzioni del relatore è una “spinta” iniziale di fotobiomodulazione, seguita dal giorno dopo dalla terapia esogena. Secondo lui “cambierà le regole del gioco”, ma è una metodica ancora nuova e da validare.</p>
+  </div>
+
+  <div class="box key">
+    <div class="lbl">Take‑home · Fase 2</div>
+    <p>Laser <strong>650 · 810 · 980 · 1064 nm</strong>, <strong>30 W</strong>, <strong>crio −40 °C</strong> ad aria secca e soprattutto <strong>termocontrollo adattivo</strong>. Si ragiona in <strong>nanometri</strong> (dove arrivo), <strong>potenza media</strong> (quanti fotoni) e <strong>joule</strong> (la dose). L’obiettivo clinico è una cicatrice <strong>lineare ed elastica</strong> che acceleri e renda più sicuro il return to training.</p>
+  </div>
+</section>
+
+<!-- ================= CAP 6 ================= -->
+<section class="chapter">
+  <div class="ch-head">
+    <div class="ch-num">06</div>
+    <div class="ch-title"><div class="eyebrow">Fase 3 · rimodellamento</div><h2>TECAR e onde d’urto radiali: verso il campo</h2></div>
+  </div>
+
+  <div class="box rosa">
+    <div class="lbl">Slide rosa · ultima fase, massima performance</div>
+    <ul>
+      <li>È la fase dell’immagine al giorno 21: fibra cicatrizzata, elastica, lineare. L’obiettivo è <strong>ricostruire la massima performance</strong> ed evitare cicatrici che “tirano” e predispongono a nuove lesioni.</li>
+      <li><strong>Esame strumentale obbligatorio</strong> prima del return to training e del return to play, anche per tutela assicurativa.</li>
+      <li>Si lavora sul <strong>recupero della funzione e del gesto specifico</strong>, insieme ai preparatori.</li>
+      <li>Strumenti: <strong>laser ad alta potenza</strong>, <strong>TECAR</strong> (fondamentale in questa fase) e, in casi selezionati, <strong>onde d’urto radiali</strong>. Queste ultime sul muscolo si usano poco: sono “una chicca”.</li>
+      <li>La TECAR dà un <strong>effetto diatermico</strong>, <strong>decontratturante</strong> e <strong>vasodilatante</strong>. Un muscolo più elastico, senza contratture né rigidità, lavora meglio verso il return to training e il return to play.</li>
+    </ul>
+  </div>
+
+  <h3>TECAR: un po’ di storia</h3>
+  <p>L’idea non è nuova. A cavallo tra Otto e Novecento un fisico francese coi baffi (d’Arsonval) sperimentava il passaggio di correnti ad alta frequenza e i loro effetti termici. Nessuno voleva fargli da cavia, così le provò su se stesso. Nel <strong>1939</strong> un medico inglese pubblicò un manuale di diatermia capacitiva per la fisioterapia. Qualcuno poi ha avuto il merito di ingegnerizzare questi studi. Nel <strong>1996 Gabriel</strong> ha studiato le <strong>proprietà dielettriche dei tessuti biologici</strong> al variare della frequenza: è questo che distingue i dispositivi di ultima generazione.</p>
+
+  <h3>Il parametro che NON conta: la potenza</h3>
+  <p>Un quiz in sala: “A chi è mai capitato di usare la TECAR al 100% e dire ‘dovevo comprarla più potente, non riesco a scaldare’?” Nessuno. <strong>Bastano pochi watt per scaldare</strong>, e il relatore non ha mai visto una TECAR certificata che non produca effetto termico. Se l’effetto sembra debole dipende dal circuito, per esempio con la placca sotto il piede e il manipolo sulla spalla. Allo stesso modo una TENS “da 2000 W” non esiste: bastano pochi milliampere.</p>
+
+  <figure class="fig-card">
+    <svg viewBox="0 0 680 150" role="img" aria-label="Scala delle frequenze delle correnti terapeutiche dalla galvanica alla radiofrequenza">
+      <g font-family="Inter">
+        <!-- log-ish axis -->
+        <line x1="20" y1="70" x2="660" y2="70" stroke="#16141a" stroke-width="2"/>
+        <g font-size="8.5" fill="#7c7584" text-anchor="middle"><text x="30" y="92">0 Hz</text><text x="150" y="92">~100–150 Hz</text><text x="290" y="92">bassa/media freq.</text><text x="520" y="92">300 kHz – 1,5 MHz</text></g>
+        <rect x="20" y="40" width="30" height="24" rx="5" fill="#e8ebf6"/><text x="35" y="56" font-size="9" font-weight="800" fill="#4a5a9e" text-anchor="middle">DC</text>
+        <text x="30" y="30" font-size="10" font-weight="800" fill="#16141a">Galvanica</text><text x="30" y="112" font-size="9" fill="#4a4550">ionoforesi</text>
+        <rect x="110" y="40" width="80" height="24" rx="5" fill="#e8ebf6"/><text x="150" y="56" font-size="9.5" font-weight="800" fill="#4a5a9e" text-anchor="middle">TENS</text>
+        <rect x="230" y="40" width="120" height="24" rx="5" fill="#e8ebf6"/><text x="290" y="56" font-size="9.5" font-weight="800" fill="#4a5a9e" text-anchor="middle">Elettrostimolazione</text>
+        <g stroke="#7c7584" stroke-dasharray="3 4"><line x1="370" y1="52" x2="420" y2="52"/></g>
+        <rect x="430" y="36" width="180" height="32" rx="6" fill="#fcebe2" stroke="#d9602b" stroke-width="1.5"/><text x="520" y="57" font-size="11" font-weight="800" fill="#9a3f16" text-anchor="middle">RADIOFREQUENZA · TECAR</text>
+        <text x="520" y="120" font-size="9.5" fill="#16141a" text-anchor="middle">è sempre <tspan font-weight="800">elettroterapia</tspan>, certificata come tale</text>
+        <text x="520" y="134" font-size="9" fill="#7c7584" text-anchor="middle">(frequenza molto più alta = “frequenza radio”)</text>
+      </g>
+    </svg>
+    <figcaption><b>Figura 6.1.</b> Tutte correnti, a frequenze diverse (scala non lineare). “Se la chiamassimo elettroterapia la dovremmo far pagare meno”: una battuta, ma con un fondo di verità.</figcaption>
+  </figure>
+
+  <h3>Il parametro che conta: la frequenza (e l’impedenza)</h3>
+  <p>Con manipolo sulla spalla e placca di scarico, la corrente percorre un <strong>circuito chiuso</strong> assimilabile a una rete di <strong>resistenze e condensatori</strong>. I tessuti più ricchi d’acqua, come il muscolo, conducono meglio di quelli poveri, come l’osso. Da qui le modalità <strong>capacitiva</strong> e <strong>resistiva</strong>. La grandezza che descrive tutto è l’<strong>impedenza (Z)</strong>. L’impedenza cambia da persona a persona (il quadricipite del relatore non è quello del collega) e <strong>nella stessa persona nel tempo</strong> (“tra mezz’ora il mio quadricipite sarà diverso”).</p>
+
+  <figure class="fig-card">
+    <svg viewBox="0 0 680 220" role="img" aria-label="Circuito della TECAR attraverso strati di tessuto con impedenze diverse e scansione di frequenza">
+      <g font-family="Inter">
+        <!-- layers -->
+        <rect x="150" y="20" width="380" height="26" fill="#f4a6c1" fill-opacity=".55"/><text x="540" y="37" font-size="9.5" fill="#16141a">cute</text>
+        <rect x="150" y="46" width="380" height="34" fill="#fbf1dc"/><text x="540" y="67" font-size="9.5" fill="#16141a">sottocute (grasso)</text>
+        <rect x="150" y="80" width="380" height="70" fill="#f4a6c1" fill-opacity=".85"/><text x="540" y="118" font-size="9.5" fill="#16141a" font-weight="700">muscolo · conduce meglio</text>
+        <rect x="150" y="150" width="380" height="40" fill="#e8e4ea"/><text x="540" y="174" font-size="9.5" fill="#16141a">osso · più resistente</text>
+        <!-- handpiece & plate -->
+        <rect x="190" y="0" width="40" height="22" rx="6" fill="#17151b"/><text x="210" y="-4" font-size="0">m</text>
+        <text x="60" y="14" font-size="10" font-weight="800" fill="#16141a">manipolo</text>
+        <rect x="150" y="194" width="380" height="10" rx="3" fill="#17151b"/><text x="60" y="203" font-size="10" font-weight="800" fill="#16141a">placca di scarico</text>
+        <!-- current path with R/C symbols -->
+        <path d="M210 22 C220 80 300 110 360 120 C420 130 460 170 470 194" fill="none" stroke="#d9602b" stroke-width="2.5" stroke-dasharray="7 4"/>
+        <g stroke="#16141a" stroke-width="1.6" fill="none">
+          <path d="M300 60 l5 -6 l5 12 l5 -12 l5 12 l5 -6"/>
+          <path d="M370 110 v-10 M378 110 v-10"/><path d="M364 105 h6 M378 105 h6"/>
+          <path d="M430 168 l5 -6 l5 12 l5 -6"/>
+        </g>
+        <text x="300" y="46" font-size="8.5" fill="#4a4550">R</text><text x="386" y="100" font-size="8.5" fill="#4a4550">C</text><text x="448" y="160" font-size="8.5" fill="#4a4550">Z</text>
+        <!-- frequency sweep -->
+        <g transform="translate(20,90)">
+          <text x="0" y="0" font-size="9.5" font-weight="800" fill="#9a3f16">frequenza</text>
+          <text x="0" y="13" font-size="9.5" font-weight="800" fill="#9a3f16">variabile</text>
+          <path d="M0 40 q4 -10 8 0 t8 0 q3 -10 6 0 t6 0 q2 -10 4 0 t4 0 t4 0 q2 -10 3 0 t3 0 t3 0 t3 0 t3 0" fill="none" stroke="#d9602b" stroke-width="2"/>
+          <text x="0" y="66" font-size="8.5" fill="#4a4550">scansione continua</text>
+          <text x="0" y="78" font-size="8.5" fill="#4a4550">invece di 1 frequenza</text>
+          <text x="0" y="90" font-size="8.5" fill="#4a4550">fissa (es. 448 kHz)</text>
+        </g>
+      </g>
+    </svg>
+    <figcaption><b>Figura 6.2.</b> Ogni strato ha un’impedenza diversa, che cambia anche nel tempo. L’ideale sarebbe misurare con due aghi ecoguidati l’impedenza del punto di lesione e tarare la frequenza giusta. Non si può fare, e l’elettromiografia di superficie misura solo la pelle. Le TECAR più moderne quindi <b>scansionano continuamente la frequenza</b>, così una parte del trattamento cade sempre su quella più adatta.</figcaption>
+  </figure>
+
+  <div class="box nera">
+    <div class="lbl">Il penalty e lo schema di Gasperini</div>
+    <p>“Ma io ottengo ottimi risultati con la mia TECAR monofrequenza del ’95.” Vero, e il relatore alza le mani. Con quella TECAR il gol lo fai con uno schema di Gasperini, più complicato. Con la frequenza variabile è un calcio di rigore. <strong>Consiglio d’acquisto:</strong> quando la TECAR va sostituita, scegliere moduli a radiofrequenza con <strong>frequenza variabile</strong>. La TECAR si presta anche a trattamenti manuali, automatici e combinati con l’esercizio terapeutico, eventualmente con due manipoli al posto della placca.</p>
+  </div>
+
+  <h3>Onde d’urto radiali</h3>
+  <div class="cols">
+    <div>
+      <p>Si parla di onde d’urto <strong>radiali</strong>, un’onda meccanica, non di quelle <strong>focali</strong>, che hanno applicazioni, parametri e scopi diversi. Il ragionamento è gemello di quello sulla TECAR. Per raggiungere un punto preciso, per esempio in una pallavolista, non si sa a priori se lavorare a 3, 4, 5, 6 o 7 Hz. I dispositivi che <strong>variano la frequenza durante il trattamento</strong> coprono più profondità senza doverla indovinare.</p>
+      <p>Per il relatore, ciò che distingue un’onda d’urto radiale “normale” da una “da calcio di rigore” è il <strong>parametro di frequenza variabile</strong>.</p>
+    </div>
+    <div class="box deep" style="margin-top:0">
+      <div class="lbl">Approfondimento · lettura critica</div>
+      <p>Nei generatori radiali la frequenza (Hz) indica di norma la <strong>ripetizione degli impulsi</strong>. Secondo la letteratura tecnica la profondità di penetrazione dipende soprattutto da <strong>pressione/energia</strong> e dal <strong>tipo di applicatore</strong>. L’associazione “frequenza = profondità” proposta in aula va quindi presa come opinione del relatore. Le evidenze delle onde d’urto sulle lesioni muscolari acute sono ancora limitate, e i relatori stessi le definiscono un impiego di nicchia.</p>
+    </div>
+  </div>
+
+  <div class="box key">
+    <div class="lbl">Take‑home · Fase 3</div>
+    <p><strong>TECAR:</strong> la potenza è trascurabile, conta la <strong>frequenza variabile</strong> per inseguire un’impedenza tissutale che cambia. <strong>Onde d’urto radiali:</strong> uso selettivo, con frequenza variabile. <strong>Laser</strong> ancora presente. Esame strumentale <strong>obbligatorio</strong> prima di rimettere l’atleta in campo.</p>
+  </div>
+</section>
+
+<!-- ================= CAP 7 ================= -->
+<section class="chapter">
+  <div class="ch-head">
+    <div class="ch-num">07</div>
+    <div class="ch-title"><div class="eyebrow">Ripasso</div><h2>Sintesi, glossario e autovalutazione</h2></div>
+  </div>
+
+  <h3>Il timing in una tabella</h3>
+  <table>
+    <tr><th style="width:15%">Fase</th><th style="width:25%">Biologia</th><th style="width:22%">Obiettivo</th><th style="width:38%">Terapia fisica e parametri chiave</th></tr>
+    <tr><td class="ph" style="color:#255f86">1 · Acuta<br><span style="font-weight:400;color:var(--muted)">gg 0–3</span></td><td>Distruzione delle fibre, ematoma, edema, attivazione delle cellule satelliti</td><td>Contenere lo stravaso ematico, evitare il riscaldamento, “dare nome e cognome” alla lesione</td><td><strong>Crio −40 °C</strong> aria secca dal tempo zero · <strong>crio‑US −10 °C</strong> (gas ad alta pressione) a <strong>1 MHz</strong>, intensità bassissima · compressione, elevazione, protezione · <strong>niente calore</strong></td></tr>
+    <tr><td class="ph" style="color:#9c1c4b">2 · Riparazione<br><span style="font-weight:400;color:var(--muted)">gg ~5–7 →</span></td><td>Rigenerazione, miotubi, angiogenesi</td><td>Riparazione <strong>lineare</strong> ed elastica</td><td><strong>Laser alta potenza</strong> 650/810/980/1064 nm, 30 W · <strong>crio −40 °C</strong> come veicolo · <strong>termocontrollo adattivo</strong> · terapia manuale, massoterapia, esercizio</td></tr>
+    <tr><td class="ph" style="color:#9a3f16">3 · Rimodellamento<br><span style="font-weight:400;color:var(--muted)">~g 21 → RTP</span></td><td>Adattamento, maturazione della cicatrice</td><td>Massima performance, elasticità, gesto specifico</td><td><strong>TECAR a frequenza variabile</strong> (diatermia, decontratturante, vasodilatante) · laser · <strong>onde d’urto radiali</strong> in casi scelti · <strong>imaging obbligatorio</strong> prima di RTT/RTP</td></tr>
+  </table>
+
+  <h3>Dieci messaggi da portare a casa</h3>
+  <div class="cols">
+    <ol>
+      <li><strong>Timing:</strong> la stessa energia può essere utile o inutile a seconda della fase.</li>
+      <li><strong>Normativa:</strong> targhetta CE, numero di serie, dichiarazione di conformità, manuale, verifica di sicurezza ogni 2 anni.</li>
+      <li><strong>Misurabile = fisico:</strong> classifica il dispositivo per l’energia che eroga, non per il nome.</li>
+      <li><strong>Crio‑US:</strong> −10 °C da gas e 1 MHz. Un freddo a +5 °C con 3 MHz dà solo analgesia superficiale.</li>
+      <li><strong>Lesione muscolare:</strong> l’obiettivo di tutta la riabilitazione è una cicatrice lineare ed elastica.</li>
+    </ol>
+    <ol start="6">
+      <li><strong>Laser:</strong> nanometri = dove arrivo · potenza <em>media</em> = quanti fotoni · joule = dose.</li>
+      <li><strong>Acqua:</strong> l’810 attraversa l’acqua, il 1064 viene fermato molto di più (~30% contro ~82% di perdita al banco ottico).</li>
+      <li><strong>Fotobiomodulazione:</strong> si innesca, non si produce. Dura circa 48 h, come l’abbronzatura.</li>
+      <li><strong>Calore e freddo:</strong> il calore ostacola la luce, il freddo secco la veicola. Il termocontrollo adattivo è la vera svolta.</li>
+      <li><strong>TECAR e onde d’urto:</strong> la potenza è trascurabile, la frequenza variabile fa la differenza.</li>
+    </ol>
+  </div>
+
+  <h3>Glossario</h3>
+  <dl class="gloss">
+    <div><dt>Citocromo c ossidasi</dt><dd>Enzima della catena respiratoria mitocondriale. È il principale foto‑accettore nella fotobiomodulazione.</dd></div>
+    <div><dt>Cromoforo</dt><dd>Molecola che assorbe la luce a certe lunghezze d’onda (acqua, emoglobina, melanina). È la “maglietta nera”.</dd></div>
+    <div><dt>Dichiarazione di conformità</dt><dd>Documento che riporta chi ha certificato il dispositivo, il campo d’impiego e la destinazione d’uso.</dd></div>
+    <div><dt>Duty cycle</dt><dd>Frazione di tempo in cui un’emissione pulsata è attiva. Determina la potenza media.</dd></div>
+    <div><dt>EUDAMED</dt><dd>Database europeo dei dispositivi medici. Vi si trova la documentazione depositata.</dd></div>
+    <div><dt>Fotobiomodulazione (PBM)</dt><dd>Modulazione del metabolismo cellulare da parte della luce: ↑ATP, ROS e NO.</dd></div>
+    <div><dt>Hertz (Hz)</dt><dd>Numero di ripetizioni di un fenomeno in un secondo.</dd></div>
+    <div><dt>Impedenza (Z)</dt><dd>Opposizione complessiva di un tessuto al passaggio di corrente alternata (resistiva e capacitiva).</dd></div>
+    <div><dt>Joule (J)</dt><dd>Energia erogata, pari a W × s. È la dose della laserterapia.</dd></div>
+    <div><dt>Lunghezza d’onda (nm)</dt><dd>Distanza tra due picchi dell’onda luminosa. È il principio attivo del laser.</dd></div>
+    <div><dt>Organismo notificato</dt><dd>Ente che certifica la conformità del dispositivo (es. IMQ, TÜV). Il suo numero compare accanto al marchio CE.</dd></div>
+    <div><dt>Trasduzione</dt><dd>Trasformazione di una forma di energia in un’altra, per esempio del suono in energia meccanica nel tessuto.</dd></div>
+  </dl>
+
+  <h3>Autovalutazione</h3>
+  <ol class="quiz">
+    <li>Un crio‑ultrasuono raffreddato a ventole e con ultrasuono a 3 MHz è adatto a contenere lo stravaso in una lesione muscolare acuta? Perché?</li>
+    <li>Un laser pulsato dichiara 10 W di picco con duty cycle del 50%. Quanti joule eroga in 100 secondi?</li>
+    <li>Perché “più il laser scalda, meglio funziona” è falso per la fotobiomodulazione?</li>
+    <li>Quale parametro della TECAR, secondo i relatori, fa la differenza terapeutica? E quale è trascurabile?</li>
+    <li>Quali documenti chiederebbero i NAS durante un’ispezione in studio?</li>
+    <li>Chi può eseguire un’infiltrazione laser ecoguidata?</li>
+  </ol>
+  <div class="box" style="background:var(--nero-soft)">
+    <div class="lbl" style="color:var(--ink)">Risposte</div>
+    <p class="answers"><strong>1.</strong> No: arriva a +5 °C invece di −10 °C, e a 3 MHz resta in superficie (2–3 mm). Dà analgesia, ma non raggiunge il muscolo. · <strong>2.</strong> Potenza media 5 W × 100 s = 500 J. · <strong>3.</strong> Il calore richiama liquidi e iperemia nei tessuti di transizione, e l’acqua assorbe i fotoni, quindi ne arrivano meno al bersaglio. · <strong>4.</strong> La frequenza variabile, perché l’impedenza cambia. La potenza è trascurabile. · <strong>5.</strong> La targhetta (CE, numero di serie) e la dichiarazione di conformità, più la verifica di sicurezza elettrica in corso di validità. · <strong>6.</strong> Solo il medico specialista in Medicina Fisica e Riabilitativa.</p>
+  </div>
+
+
+</section>
+
+</body>
+</html>
