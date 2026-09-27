@@ -1,0 +1,747 @@
+[000:00] Scusate ancora per il ritardo ma davvero ci ho messa tutta, sono partito stamattina alle 8 da Madrid ed è stato un giro lunghissimo.
+[000:09] Allora faremo una parte teorica sulla ecografia delle lesioni muscolari dello sportivo e poi faremo una parte pratica in cui se riusciamo con i tempi vi faccio vedere un po' di scansioni difficili dell'alto inferiore.
+[000:23] Innanzitutto in sala siamo radiologi, ortopedici, fisiatri, medici dello sport e fisioterapisti, giusto?
+[000:30] Epodologi. Ok. Chi di voi usa l'ecografia? Per alzata di mano. Facciamoci un'idea, non è un esame, perché devo capire un po'.
+[000:39] Ok. Chi non ha mai usato l'ecografia? Ok. Ok. Va bene.
+[000:48] Allora, ovviamente per parlare di ecografia nelle lezioni muscolari io affianco un po' di risonanza, sia per darvi una panoramica,
+[000:55] sia perché è giusto che voi sappiate come utilizzare la risonanza, anche se non siete dei radiologi,
+[001:00] perché dovete sapere quando chiedere le informazioni che possono darvi le risonanze magnetiche
+[001:05] e quello che invece vi dà in più l'ecografia.
+[001:09] Per fare questo, faremo questo escursus, quindi parliamo un po' dell'introduzione
+[001:15] delle lecine muscolari in generale, parleremo molto di anatomia e terminologia
+[001:20] perché ritengo sia essenziale parlare sempre la stessa lingua.
+[001:23] è fondamentale ad esempio nella stesura di un referto farci capire, parlare di classificazioni e complicanze.
+[001:30] Parleremo di tecnica ecografica con un accenno anche alla tecnica di risonanza,
+[001:35] parleremo dei repetiti imaging, classificazioni e poi l'evoluzione di queste lesioni e le possibili complicanze.
+[001:42] Per fare questo faremo anche, giusto perché penso che siate stanchi quindi vi voglio tenere un po' sul pezzo,
+[001:49] fare un discorso sui principali stadi italiani, giusto per sconfondervi le date.
+[001:56] Allora, partiamo dall'introduzione, dalle lezioni sportive, quindi un dato più, diciamo,
+[002:02] epidemiologico, e partiamo con lo stadio a Milano, inizio da lì, stadio Meazza,
+[002:09] molti di voi ovviamente sanno che è la scala del calcio, lo stadio San Siro, perché origina
+[002:13] dal quartiere San Siro, si chiama Meazza per questo calciatore milanese che nel 34 e nel
+[002:18] 38 ha vinto i mondiali di calcio e siamo a 75 mila posti di capienza. Ma di cosa stiamo
+[002:25] parlando quando parliamo di background delle lesioni sportive? Parliamo di questo, parliamo
+[002:31] di lesioni molto frequenti, soprattutto nel calcio e parliamo di alto inferiore, parliamo
+[002:36] di una problematica legata a return to play, quindi atleti che restano fuori dal campo,
+[002:41] per quanto tempo? Quindi parleremo molto di questo concetto. E parliamo soprattutto di
+[002:46] quattro gruppi muscolari che sono frequentemente interessati, che sono gli schiocrurali, il
+[002:52] quadricipite, gli aduttori e il tricipite della scura. Cosa hanno in comune tutti questi
+[002:59] muscoli? Sono dei muscoli pennati caratterizzati da fibre muscolari molto veloci, tipo 2, a
+[003:07] eccezione del soleo. Quindi hanno tutta questa caratteristica che gli predispone a delle
+[003:23] lesioni muscolari di tipo indiretto, parleremo di lesioni indirette prevalentemente, più
+[003:30] che di lesioni dirette che sono le lesioni contusive. Lesioni dirette e lesioni indirette,
+[003:44] le lesioni indirette sono questo tipo di lesioni, quando parliamo di lesioni indirette il meccanismo
+[003:49] più frequente è la contrazione in allungamento. Quindi contrazione è muscolo che viene allungato
+[004:05] in contrazione, è diverso da quando sta andando. E' quello il primo meccanismo. Il secondo
+[004:29] meccanismo invece è un eccessivo allungamento con un muscolo che non è in contrazione, è
+[004:36] lesione tipica del semimembranoso, lesione completamente diversa è la lesione diretta,
+[004:41] la contusione, tipica ginocchiata contro la coscia e stiamo parlando di una lesione che
+[004:46] è clinicamente, anatomicamente, ecograficamente completamente diversa. Prende anche dei gruppi
+[004:52] muscolari diversi, perché? Qual è la differenza? Che in questo caso non è il ginocchio, la
+[004:58] vallonata ad agire con un meccanismo contusivo, è l'osso, la diatesi femorale, ad esempio
+[005:02] che agisce come un meccanismo a taglio su gruppi muscolari profondi, come il vasto intermedio,
+[005:07] che generalmente non è interessato a lesioni distrattive, è molto rara la lesione distrattiva del vasto intermedio.
+[005:15] Parliamo adesso di anatomia e terminologia, per questo passiamo allo stadio olimpico,
+[005:19] in realtà si chiama stadio olimpico dal 60 perché ci sono state le olimpie di Roma
+[005:24] e quindi da allora lo chiamiamo stadio olimpico, 70.000 posti di capienza.
+[005:30] non parliamo troppo di anatomia
+[005:32] però per farvi comprendere
+[005:34] come descriviamo le lesioni distrattive muscolari
+[005:37] e l'impatto prognostico
+[005:39] nel ritorno in campo di questi pazienti
+[005:42] dobbiamo parlarne un pochettino
+[005:44] giusto per dirvi che queste fibre muscolari
+[005:47] sono tutte circondate dall'endomisio
+[005:50] abbiamo un'alternanza di fibre muscolari
+[005:53] e connettivo
+[005:54] connettivo che noi richiameremo tantissimo
+[005:57] in questa presentazione
+[005:58] Sono tutte raccolte poi a formare questi fascicoli muscolari a loro volta circondati dal perivisio
+[006:05] e poi l'intero ventre muscolare è avvolto all'epivisio, fin qui è abbastanza semplice.
+[006:13] Vi faccio vedere questa immagine di un ventre muscolare bellissimo che è il retto femorale.
+[006:17] È molto bello perché ha una complessità che spiega appieno queste lesioni muscolari.
+[006:22] Innanzitutto un concetto che a volte certi radiologi sfugge,
+[006:27] cioè che non è che esiste il tendine, poi c'è il muscolo e poi c'è il tendine distale.
+[006:34] I tendini danno delle propaggini intramuscolari e questo ce lo ricordiamo bene.
+[006:39] Questo è il classico esempio, questa virgoletta è la propaggine del capo indiretto del retto femorale,
+[006:45] mentre il capo diretto, non questo è l'indiretto, il capo diretto va a formare l'aponeurosità, superficiale.
+[006:53] Perché vi parlo di distribuzione del tessuto connettivo?
+[006:56] vi faccio una domanda rapida
+[006:58] queste frecce bianche
+[007:00] se io ho una lesione distrattiva
+[007:01] in questo punto
+[007:02] come la chiamiamo?
+[007:04] mio tendine, mio aponeurotica
+[007:06] mio fasciale
+[007:07] come la chiamiamo qua?
+[007:09] mio?
+[007:10] mio fasciale
+[007:11] esatto
+[007:12] la chiamiamo mio fasciale
+[007:13] in realtà però la fascia
+[007:15] così come la intendiamo
+[007:17] è un'altra cosa
+[007:18] la fascia separa il sottocute
+[007:20] dai ventri muscolari sottostanti
+[007:22] il problema è che istologicamente
+[007:23] noi non distinguiamo
+[007:25] dove finisce la fascia e dove inizia l'epimisio.
+[007:28] Quindi noi non parliamo di lesione dell'epimisio,
+[007:30] parliamo di lesione miofasciale anche quando siamo lontani dalla fascia.
+[007:34] Quindi questo giusto per spiegarvi che sia in italiano che in inglese
+[007:37] parliamo di lesioni miofasciali.
+[007:41] Bene, tra l'altro se noi utilizziamo l'imaging e questa è la stessa immagine
+[007:44] in risonanza magnetica, non possiamo distinguere la fascia dall'epimisio, giusto?
+[007:49] Stessa cosa vi assicuro in ecografia.
+[007:52] Questa è la stessa immagine.
+[007:53] vedete la nostra virgoletta
+[007:55] col capo indiretto, cosa vediamo?
+[007:57] e questo lo vediamo in asse corto
+[007:59] in asse lungo noi vediamo
+[008:00] l'aspetto tipicamente pennato
+[008:02] quell'angolo di pennazione
+[008:04] dei fascicoli muscolari
+[008:06] rispetto al tendine
+[008:08] e all'epimisio muscolare
+[008:11] quindi ricordiamoci
+[008:13] il tessuto connettivo anche perché
+[008:15] quando fate un'ecografia
+[008:17] per sospetta lesione muscolare
+[008:18] voi dovete seguirvi il connettivo
+[008:21] macroscopico perché le lesioni
+[008:23] le trovate lì, le trovate attorno alle bimisio, le trovate attorno al tendine, alla poneolosi,
+[008:27] quindi dovete seguirvi le strutture bianche in ecografia, perché il connettivo è bianco,
+[008:33] il fascicolo muscolare normale è ipoipotero.
+[008:38] Bene, parliamo un po' di tecnica.
+[008:41] Per parlare di tecnica accenniamo allo stadio Diego Armando Maradona,
+[008:46] lo sapete tutti, si chiamava stadio San Paolo,
+[008:49] forse non sapete che prima si chiamava stadio del sole, non sbaglio,
+[008:53] Stadio San Paolo perché è originale al quartiere San Paolo.
+[008:56] L'altra cosa che non sapete è che ha 55.000 posti di capienza,
+[008:59] però in un Napoli-Juventus del 1974 sono stati ospitati 90.000 tifosi.
+[009:08] Non sappiamo come è stato possibile, però è successo.
+[009:12] Un accenno alla risonanza per dirvi che la risonanza a passo campo è molto utile per certe cose,
+[009:18] per certi tipi di lesioni, per certe valutazioni più articolari, soprattutto le piccole articolazioni.
+[009:25] Ora questa volta mi ammazza.
+[009:27] Però per studiare le lesioni muscolari in un paziente sportivo, soprattutto atleta professionista,
+[009:35] ma vi dico anche l'amatoriale, c'è bisogno dell'alto campo.
+[009:40] Ho bisogno di un fogo ampio.
+[009:42] Non mi soffermo troppo sulla tecnica, perché molti di voi non sono radiologi,
+[009:46] però è essenziale avere un FOV ampio, l'ideale sarebbe iniziare con una coronale stir bilaterale,
+[009:54] io vedo subito l'enema dove è localizzato, poi mi piazzo le assiali, la società europea con il team del Barcellona
+[010:02] dice che bisogna fare solo monolaterali, probabilmente andrebbe fatto tutto monolaterale a FOV stretto,
+[010:08] alta risoluzione, meno di 4 mm, possibilmente PD, Fazzate e T2, però una bilaterale T1 anatomica a me piace sempre,
+[010:15] questa qua e mi fa vedere
+[010:17] non solo mi dà informazioni sull'anatomia
+[010:20] ma mi fa vedere bene anche le cicatrici
+[010:22] e l'involuzione di cosa, perché un attivo
+[010:23] la faccio sempre, però
+[010:25] siamo andati veloci sulla risonanza
+[010:27] una cosa importante per voi è che chiedete
+[010:30] la risonanza
+[010:30] quando dovete chiedere la risonanza?
+[010:34] quando non va fatta?
+[010:35] quando va fatta?
+[010:37] in realtà non c'è un'evidenza forte su questa cosa qua
+[010:39] il timing di una risonanza e di un'ecografia
+[010:41] è un concetto per voi molto utile
+[010:43] molto importante, ma in realtà nei primi sette giorni la letteratura ci dice che non
+[010:47] cambia praticamente niente, ne parlavamo prima in macchina, la risonanza forse il problema
+[010:53] che ha è che sovrastima, cioè voi fate una risonanza a un atleta che magari sembra avere
+[010:58] una lesione di basso grado, poi vedete un enema mostruoso, quindi può essere in parte
+[011:03] fuorpiante soprattutto nel follow up che io sconsiglio vivamente, però dal punto di
+[011:09] vista del timing lo fate al giorno 1, lo fate al giorno 7 non cambia molto dal punto
+[011:13] di vista delle caratteristiche di imaging, forse c'è un po' più di elema all'inizio,
+[011:18] quindi può dirvi forse un po' troppo, ma parliamo di quello che vi interessa di più
+[011:24] oggi, quindi l'ecografia. Per chi gestisce clinicamente il paziente questo progetto è
+[011:30] spuntato, non lo è per il radiologo che ha un paziente davanti e è convinto che fa
+[011:33] semplicemente una fotografia, in realtà se non viene un paziente con una sospetta
+[011:37] lesione muscolare distrattiva, io devo sapere quando è successo, come è successo, qual
+[011:43] era il movimento, qual è l'arto dominante, qual è esattamente il punto del dolore.
+[011:50] Io vi dico, mi devi mettere il dito qua, voglio sapere dov'è che hai male. Mi guardo le
+[011:54] chimosi, io voglio vedere dove è andato quel sangue. Perché? Perché il sangue ovviamente
+[012:00] cola e io lo trovo distalmente alla lesione. Se io mi trovo un'ecchimosi medio distale
+[012:05] di coscia posteriore, mi trovo tutta l'ecchimosi del cavo poplite, io non mi aspetto una lesione
+[012:09] a quel punto, quindi aspetto a una lesione prossimale degli ischio crurali ovviamente,
+[012:13] può per molti di voi risultare scontato, però ripariamo concetti utili. Massa palpabile,
+[012:20] massa palpabile può essere un grosso ematoma, può essere un ventre muscolare che si è staccato,
+[012:26] pensate al poppy sign del bicipite, oppure posso sentire proprio un gap, è un gap in
+[012:32] quel caso un buco che può essere una lesione muscolare di alto grado, una pulsione tendinia
+[012:37] con retrazione. Quindi è molto importante visitare il paziente. Io ho il privilegio di avere oltre gli specializzanti di radiologia, degli specializzanti di fisiatria, medicina e dello sport.
+[012:47] Io gli faccio fare l'ambulatore ecografico la visita, io poi gli faccio l'ecolo insieme a loro. Ed è bellissimo, sarebbe bellissimo per tutti lavorare così, però capisco che un contesto così multicipinare è complicato da ricreare.
+[013:01] selezione della sonda
+[013:03] la sonda è fondamentalmente lineare
+[013:05] ovviamente, quindi è una sonda
+[013:07] ad alta frequenza, ma dipende
+[013:09] da cosa andiamo a studiare
+[013:10] dipende da quanto è profondo il ventre muscolare
+[013:13] che dobbiamo studiare, è un ilio
+[013:15] di un paziente
+[013:17] con uno spessore muscolare
+[013:19] importante, è un ventre
+[013:21] muscolare profondo, perché alle volte
+[013:23] anche per valutare l'estensione
+[013:25] di un ematoma, può essere utile
+[013:27] utilizzare una convex
+[013:29] però tendenzialmente la lineare
+[013:31] adattiamo la frequenza sulla base che sia una struttura superficiale
+[013:34] quindi alziamo la frequenza
+[013:36] se è profonda abbassiamo la frequenza
+[013:39] e ovviamente anche il fuoco
+[013:41] queste immagini panoramiche
+[013:44] del teatrov esteso
+[013:46] ci servono appunto per dare un'estensione
+[013:49] dell'ematoma o delle lesioni
+[013:50] informazioni che noi abbiamo per lo più su scansioni longitudinali
+[013:55] e che altro?
+[013:58] il timing dell'eco
+[013:59] voi che dite?
+[014:02] quando la facciamo l'ecografia?
+[014:03] la facciamo subito?
+[014:04] aspettiamo?
+[014:05] quanto dobbiamo aspettare?
+[014:09] 5 giorni
+[014:11] qualcun altro la pensa diversamente?
+[014:15] 48-72?
+[014:17] nel fondo anche prima
+[014:21] allora il bello dell'ecografia
+[014:24] è che ce l'hai in campo
+[014:25] quindi tu hai finito l'allenamento
+[014:28] e gli fai l'eco
+[014:29] non c'è un'evidenza
+[014:32] cioè non c'è un catoffo che ti dice se la fai prima di 6 ore assolutamente sbagli.
+[014:39] Diciamo che nelle prime 6-12 ore l'emorragia, l'infascimento emorratico che è il perecogeno
+[014:45] può mascherare una lesione, non te la fa vedere, può sembrare anche una struttura muscolare normale
+[014:51] quindi il primo giorno rischi di sottostimare.
+[014:55] E' chiaro che se hai un sospetto di una lesione in alto grado e gli metti la sonda e vedi la vulzione
+[014:59] hai già fatto diagnosi
+[015:01] quindi non è sbagliato farla subito
+[015:03] bisogna riconoscere i limiti dell'epografia
+[015:05] il primo giorno, prime 48 ore
+[015:08] però insomma è una cosa abbastanza
+[015:10] graduale come cambia questa cosa qua
+[015:12] c'è già 12-18 ore
+[015:14] l'ematoma comincia a diventare più ipo-anecogeno
+[015:16] perché va incontro a liquofazione
+[015:18] come impugniamo la sonda?
+[015:22] magari i radiologi in sala dicono
+[015:24] ci stiamo annoiando
+[015:25] in realtà anche alcuni radiologi
+[015:28] li vedo impugnare
+[015:29] la sonda
+[015:32] come se fosse un macete
+[015:34] in realtà io vi consiglio
+[015:36] vivamente di tenere la sonda
+[015:37] con due dita, due
+[015:39] massimo tre e avere quarto
+[015:41] quinto dito sulla pelle
+[015:43] perché questa cosa qua? Perché coagrafare un fegato
+[015:46] è molto facile
+[015:47] coagrafare un tendine o un muscolo è molto
+[015:50] molto difficile, quindi voi dovete avere
+[015:52] stretto contatto, dovete evitare
+[015:54] gli artefatti da anisotropia
+[015:55] dovete avere il massimo controllo
+[015:57] della sonda, quindi va tenuta con le ultime due o tre dita ad esse al piano cutaneo.
+[016:04] Perché? Perché il risultato banalmente è questo, cioè questo è lo stesso muscolo,
+[016:08] stessa scansione ma con un artefatto da anisotropia che mi cambia l'immagine, cioè mi rende
+[016:14] il muscolo più ipercogeno o più ipoecogeno, mi fa vedere un'idea muscolare che non esiste,
+[016:18] quindi il risultato poi è rischiare di sbagliare la nostra diagnosi. Ci sono alcune strutture
+[016:26] che sono particolarmente sensibili a questo artefatto d'anisotropia e lo sono i muscoli
+[016:32] e lo sono i tendini. Questa è una scansione del polso in cui i tendini dei flessori diventano
+[016:36] neri e bianchi. Il nervo mediano resta sempre perfetto, i nervi sono molto meno sensibili
+[016:41] a questo artefatto. Ve lo dico sia perché dovete evitare un artefatto d'anisotropia,
+[016:46] ma alle volte vi può essere di aiuto. Se io sono sulla pianta del piede e cerco i tendini
+[016:52] che in mezzo a quel marasma dei ventri muscolari sono difficili da riconoscere.
+[016:56] Se voi giocate con la sonda e fate tiltare quella sonda
+[017:00] e vedete delle strutture che diventano alternativamente ipoibre e coge
+[017:03] sono i tendini dei flessori, banalmente.
+[017:07] Però può essere di aiuto un artefatto che generalmente è un ostacolo alla nostra attività.
+[017:13] Poi come la facciamo la nostra ecografia?
+[017:14] Vi ho detto miriamo l'ecografia al problema, no?
+[017:18] abbiamo un sospetto diagnostico
+[017:20] sulla base della clinica
+[017:21] della tuefazione, dell'echimosi
+[017:23] dove riferisce l'atleta
+[017:24] però alla fine quel muscolo lo dovete studiare tutto
+[017:27] dall'inizio alla fine
+[017:29] state facendo un'ecografia posteriore di coscia
+[017:31] per sospettare le sue inflessori
+[017:32] iniziate dall'inserzione prossimale
+[017:35] e vi studiate tutto quanto
+[017:37] il bicipite, il semipendinoso
+[017:39] il semimembranoso
+[017:41] e quando dico studiate
+[017:43] ve lo guardate in asse corto
+[017:45] perché la diagnosi
+[017:47] non la facciamo in asse lungo
+[017:48] voi dovete avere quest'area di sezione
+[017:50] questa scansione trasversa
+[017:54] che è quella sulla sinistra
+[017:55] voi scorrete la vostra sonda
+[017:57] affinché non trovate il problema
+[017:59] una volta che trovate il problema
+[018:00] e questa è una lesione distrattiva
+[018:03] del tendine congiunto del capolungo del bicipite
+[018:06] e del semitendinoso
+[018:07] vedete tutto l'infarcimento emorragico attorno
+[018:10] ve la guardate in asse lungo
+[018:11] perché?
+[018:12] per portarne l'estensione
+[018:14] o ancora in questo caso
+[018:16] cosa è questa struttura iperecogena? È il tendine. Che aspetto ha in questa immagine?
+[018:23] Come mi sembra? Qualcuno? Mi sembra normale? Perché non è normale questa tendine? È
+[018:38] disomogeneo, è irregolare, ma soprattutto fa così. Quindi ha perso tensione. Quella
+[018:43] perdita di tensione che raramente leggo nei referti e che è un'informazione utile in
+[018:49] fase di riabilitazione di questo paziente, perché significa che c'è stato un interessamento
+[018:53] del tendine, non è semplicemente una lesione di estrattiva muscolare, c'è stato un interessamento
+[018:58] tendinio che può allungare i tempi di recupero. Quella scansione trasversa poi ci serve per
+[019:05] disegnare una cross-sectional area, quindi per capire l'estensione in asse corto di quella
+[019:10] lesione, quindi a scopo di classificazione. Che altro? Qual è il vantaggio dell'ecografia?
+[019:15] che noi facciamo live un confronto col controllato.
+[019:20] Può sembrare banale, ma vi assicuro che in certi casi è essenziale per questa cosa.
+[019:25] Vi aiuta a fare diagnosi che altrimenti non potete fare,
+[019:27] perché se io vedo questa immagine qua sulla sinistra in basso,
+[019:31] che è un retto femorale, e lo confronto allo stesso livello dell'altra coscia,
+[019:37] e vedo che quella virgoletta doveva ancora essere lì, non dovrebbe essere terminata,
+[019:41] perché a un certo punto si perde dentro il ventre muscolare,
+[019:44] allora posso dire che in questo c'è un interessamento distrattivo del termine
+[019:48] poi lì è un po' irregolare in asse lungo
+[019:51] però mi aiuta molto
+[019:52] mi aiuta molto, vi faccio anche l'esempio di un attuttore breve sopra
+[019:56] in asse corto, a sinistra il lato affetto
+[020:00] a destra, stessa scansione, lato sano
+[020:02] anche perché alle volte l'ipergocidicità può essere molto sfumata
+[020:07] quindi può sfuggire, è molto utile avere il confronto con il lato sano
+[020:11] e quindi abbiamo l'asse lungo sempre dello stesso ventre muscolare.
+[020:17] Cos'altro abbiamo che assolutamente la risonanza non ci può dare?
+[020:21] Lo studio dinamico di un tendine, lo studio dinamico di una lesione muscolare,
+[020:28] uno studio dinamico che può essere fatto in allungamento passivo,
+[020:32] chiedendo di contrarre, comprimendo, ci sono tante informazioni che si possono ottenere.
+[020:38] se abbiamo tempo
+[020:40] parliamo ad esempio di tricipite
+[020:42] e della classificazione di pedre
+[020:44] che magari alcuni di voi avranno sentito
+[020:46] in cui si parla proprio di questo
+[020:48] cioè il gastrocnemio
+[020:50] che resta ancorato alla poneurosi
+[020:52] che si sta rimaginando
+[020:54] e che comincia a muoversi col solio
+[020:56] dinamicamente durante la flessione plantare
+[020:59] quello è sicuramente positivo
+[021:01] dal punto di vista prognostico
+[021:02] quindi ci sono delle informazioni
+[021:04] molto utili che possiamo ottenere
+[021:06] dinamicamente con l'esame ecografico, anche perché alle volte noi vediamo delle strutture
+[021:12] che non riusciamo a comprendere appieno, non riusciamo a capire se sia un tendine sano,
+[021:18] se sia un tendine semplicemente deflesso, se sia del tessuto cicatriziale assolutamente
+[021:24] non funzionale, quello è un tessuto cicatriziale non funzionale, perché dinamicamente vedo
+[021:30] che semplicemente non è nulla, quello è in bottiglia, non è un tendine normale. E lo
+[021:36] vedo molto bene dinamicamente. Infine, tecniche avanzate, stronchiamole subito, l'astografia
+[021:44] non serve a niente, l'astografia nel follow up delle lesioni muscolari a scopo clinico
+[021:50] non è mai stata utilizzata con criterio, è dimostrato che non è riproducibile, quindi
+[021:57] non è fattibile, uno strumento nuovo per essere utilizzato nella pratica clinica deve
+[022:02] essere innanzitutto riproducibile e al momento sui muscoli e sui tendini non lo è. Ci sono
+[022:07] alcune evidenze sulla tendinopatia dell'achilleo, sulle picondilite, ma in realtà l'astosonno
+[022:12] non ci aiuta molto, è ancora esplorativa. Qua le aziende ci devono provare, ma la vedo
+[022:20] lunga. Il Doppler a me serve per vedere se c'è o non c'è ad esempio la tendinopatia
+[022:26] mi può aiutare, perché? Perché nelle ipervascolarizzazioni tendine, per esempio l'achilleo quando il
+[022:32] bimote, l'ecografia assolutamente negativa o nelle picondilite, io il dopper lo accendo
+[022:37] perché un tendine normale non si accende mai col power dopper, non lo vedo mai un quadro
+[022:43] di ipervascularizzazione intraperitendinia. Ipervascularizzazione che non è tessuto infiammatorio
+[022:49] ma è un tentativo di riossigerazione, di cicatrizzazione di un tendine degenerato,
+[022:56] stiamo parlando di quadri degenerativi. Oppure ovviamente se avete delle entesi di infiammatorio
+[023:00] ma lì entriamo in un ambito più reumatologico.
+[023:04] E poi nella valutazione delle cicatrici ci può dire qualcosa,
+[023:07] nel senso che una cicatrice ancora immatura,
+[023:09] che non si è completamente stabilizzata,
+[023:11] può avere un power drop perché una cicatrice definitiva matura
+[023:14] non dovrebbe vedere.
+[023:19] E questo è un esempio di un gracile
+[023:21] che ha una lesione biofasciale mediale non recente,
+[023:26] perché vediamo si sta riformando un po' il tessuto,
+[023:29] vedo ancora della vascularizzazione,
+[023:31] è una cicatrice ancora non stabile, è una cicatrice immatura. Di lastografia non ne parliamo più.
+[023:38] Allianz Stadium, ve lo metto perché da piccolo ero rompo, poi diventavo riposo del Palermo,
+[023:45] prima ti fanno perdere, quindi ve lo metto lì, si chiama Allianz, quando ero piccolino era lo stadio delle Alpi,
+[023:50] perché il quartiere da cui è nato era questo, però diciamo che è stato demolito e poi hanno fatto questo,
+[023:58] questo che è il primo stadio privato d'Italia, di una struttura, di una società calcistica.
+[024:06] Rapidamente l'aspetto di risonanza. Se voi guardate una risonanza magnetica, la lesione
+[024:11] distrattiva muscolare ha un aspetto più umato, cioè abbiamo l'edema che va a disegnare gli
+[024:17] spazi interfibrillari. Questo è l'aspetto tipico delle lesioni mio-tendine, mio-fasciali,
+[024:24] muscolari. In ecografia il corrispettivo di un'alterazione in cui ci sia solo etema,
+[024:32] senza un buco, senza una vera e propria rottura delle fibre, è semplicemente un'iperecogenicità
+[024:38] diffusa. Come si possono presentare poi i vari tipi di lesione? Allora, la lesione intramuscolare
+[024:48] propriamente detta dovrebbe essere una lesione distrattiva che è lontana dal connettivo
+[024:52] macroscopico, una rarità. È veramente difficile e queste lesioni generalmente comunque prendono
+[024:58] origine da un prolungamento aponeurotico, nella maggior parte dei casi. Quindi possiamo
+[025:04] individuare una lesione distrattiva in cui ci sia un buco, ma non vediamo un connettivo
+[025:08] macroscopico accanto. Una fascia, non vediamo un tendine, una aponeurosi. Oppure cosa possiamo
+[025:17] avere? Possiamo avere una lesione miofasciale, quella che dicevamo prima. Una lesione miofasciale
+[025:21] in cui abbiamo un coinvolgimento dell'epimisio e generalmente se avete una lesione di questo tipo
+[025:26] avete un'interruzione della fascia e un sanguinamento intermuscolare che può essere identità variabile.
+[025:34] Che altro abbiamo? Questo è il corrispettivo ecografico, vedete l'interruzione dell'epimisio
+[025:40] e l'ematoma intermuscolare. Questa è la lesione che ho fatto vedere prima.
+[025:48] Lesione miotendinia. Lesione miotendinia significa che lungo una propaggine tendinia,
+[025:53] in questo caso che è intramuscolare, abbiamo tutto quest'edema con quell'aspetto più mato
+[025:59] che vi dicevo prima. Poi si può avere un interessamento del tendine con una interruzione
+[026:07] del tendine oppure no, oppure semplicemente una lesione, parleremo meglio della classificazione
+[026:13] di tipo BAMIC, però questa è quell'ecografia che vi ho fatto vedere prima, cioè quell'aspetto
+[026:17] sfumato della virgoletta intramuscolare che è il capo indiretto del retto femorale, quello
+[026:25] è il controllato, giusto per ribadire il concetto. Quando parliamo di interessamento
+[026:32] tendinio non parliamo solo di avulsione dei tendini degli ischio crurali, stiamo parlando
+[026:38] come dicevo prima di lesione intramuscolare. Per vedere qui abbiamo una interruzione del
+[026:44] tendine intramuscolare a questo livello, così come lo vediamo anche nel retto femorale lì,
+[026:48] lo vediamo sia nella scansione trasversa che in quella colonale che è un po' più
+[026:54] panoramica. In questo caso invece abbiamo una vera e propria avulsione, ma guardate l'immagine
+[027:00] sulla destra, vedete quella perdita di tensione, quel tendine non lavora più, vi è un'informazione
+[027:07] utile da dare insieme all'entità dell'eventuale retrazione di un tendine avulso, cosa che
+[027:14] può avere delle implicazioni ovviamente di tipo chirurgico. Questo vale sia per le
+[027:20] avulsioni tendine sia per le avulsioni delle apofisi. Pensate al giovane atleta di 12 anni
+[027:27] che ha ancora le cartilaggine a crescimento, che può avere un distacco di un'apofisi
+[027:31] tipico nel crocciatore dell'apofisi antro-inferiore, iliaca, no? S'è la tira e vento femorale
+[027:35] si stacca, avulsioni maggiori di 1,5-2 cm hanno una potenziale indicazione chirurgica,
+[027:42] quindi è un'informazione che bisogna dare e si può provare a dare con l'ecografia.
+[027:48] Le sue in tendine abbiamo qua poi degli altri esempi ecografici, vedete anche dinamicamente
+[027:56] come si vede l'avulsione dell'aduttore lungo nell'immagine in basso.
+[028:01] bene
+[028:02] come vedete vi ho stressato un po'
+[028:05] con il concetto del connettivo macroscopico
+[028:08] perché tutto questo?
+[028:10] perché in realtà
+[028:11] questa è un'informazione molto utile
+[028:15] a scopo prognostico
+[028:16] perché più è interessato il connettivo macroscopico
+[028:19] più aumenta la
+[028:21] peggiore la prognosi
+[028:24] aumenta il ritempio di recupero
+[028:26] aumenta il rischio di rivestione
+[028:28] quindi dire che uno ha una lesione
+[028:31] mio tendinia con una interruzione del capo indiretto del retto femorale è una cosa,
+[028:36] dire una lesione miofasciale allo stesso livello dello stesso muscolo è già un'altra cosa.
+[028:44] Oltre questo poi informazioni aggiuntive sono la sede anche nello stesso ventre muscolare
+[028:49] perché sapete meglio di me che una lesione distale del retto femorale ha una prognosi
+[028:53] diversa da una lesione prossimale che è prognosticamente più sfavorevole.
+[028:58] vediamo giusto qualche esempio di legge diretta
+[029:01] quindi trauma confusivo
+[029:03] l'acerazione muscolare
+[029:04] è un ematoma che in una fase iniziale
+[029:06] è quell'immagine in alto che vedete qui
+[029:08] quindi molto iprecogena
+[029:10] molto corpuscolata
+[029:11] successivamente il sangue si riassorbe
+[029:14] restano questi tralci di coaguli
+[029:17] che vediamo cronicamente
+[029:19] in risonanza vediamo
+[029:20] l'evoluzione del segnale
+[029:22] sulla base dei prodotti di degradazione
+[029:24] dell'emoglobina
+[029:26] e quando valutiamo con la nostra ecografia
+[029:29] una bella ginocchia di coscia
+[029:31] dobbiamo capire se sia semplicemente
+[029:33] una soffusione emorragica
+[029:34] come vedete in questo caso qua
+[029:36] o se ad esempio si sia formato un ematoma
+[029:38] l'ematoma è quello che vedete sulla destra
+[029:42] ci sono anche delle
+[029:43] eventuali implicazioni
+[029:46] di aspirazione coguidata
+[029:48] di questi ematomi
+[029:49] in alcuni casi
+[029:51] selezionati
+[029:52] poi ne possiamo parlare
+[029:56] dire quanta sia la componente fluida e quanto sia semplicemente l'esorfusione emorragica
+[030:01] ovviamente nella gestione del paziente dell'atleta può cambiare.
+[030:07] Condizione diversa invece è il DOMS.
+[030:10] Il DOMS lo vediamo frequentemente negli atleti veli in risonanza,
+[030:15] è un edema diffuso che noi vediamo nei ventri muscolari,
+[030:19] associato a una sintomatologia più tardiva perché compare dopo 24-72 ore,
+[030:23] si riassorbe spontaneamente sia l'edema che il dolore.
+[030:27] Generalmente la sintomatologia può durare 5-7 giorni,
+[030:30] l'edema può rimanere anche fino a 20 giorni.
+[030:34] Raramente si vedono dei quadri ecografici così eclatanti,
+[030:38] però un edema omogeneo che non segue il connettivo macroscopico,
+[030:44] soprattutto se associato a una sintomatologia tipica da tomo,
+[030:49] si fa fare diagnosi.
+[030:50] su questa non mi soffermo perché in realtà è un'entità nuova
+[030:54] su cui ancora non si è ben capito di cosa stiamo parlando
+[030:57] classificazioni, si parla sempre di classificazioni
+[031:01] il stadio operaris lo devo portare perché in realtà si chiama Rassi
+[031:07] perché è il quartiere da cui origina
+[031:08] forse non sapete che è lo stadio più longevo d'Italia
+[031:12] in attività, perché 1911, Polgia, Pancesca
+[031:17] se non ci siete stati, andateci.
+[031:21] Bene, classificazioni.
+[031:22] Classificazione è un bel casino.
+[031:24] È un bel casino perché ci sono tante classificazioni.
+[031:27] Classificazioni epografiche, classificazioni di risonanza.
+[031:30] Ognuno aggiunge, toglie qualcosa di diverso.
+[031:33] Negli ultimi anni hanno aggiunto elementi in più
+[031:38] perché si è capito che ci sono tante informazioni utili
+[031:41] che possiamo recuperare da un esame di imaging.
+[031:44] dal punto di vista di
+[031:46] le classificazioni più utilizzate
+[031:49] sono queste
+[031:50] dal punto di seco grafico la Pitron
+[031:52] risonanza, munich e bamic
+[031:54] in realtà la bamic nasce solo per
+[031:57] i flessori di coscia
+[031:58] cosa ha aggiunto la bamic rispetto
+[032:01] alla munich?
+[032:02] quella classificazione miofasciale, mio tendinia
+[032:04] tendinia
+[032:05] la classificazione in Barcellona è ancora più complicata
+[032:09] è direi quasi
+[032:11] traslabile
+[032:12] nell'attività clinica, ma il punto non è quale è più bella, il punto è parlare la stessa lingua.
+[032:20] Quindi col vostro radiologo, col vostro medico dello sport, col vostro fisiatra dovete parlare la stessa lingua
+[032:26] e utilizzare una classificazione che vada bene per tutti i pazienti che vedete e che siano gestiti da quel collega lì.
+[032:34] Perché altrimenti non ci si capisce, serve proprio a comunicare facilmente e non è neanche così facilmente
+[032:40] perché se mi arriva una ecografia di coscia per le sue distrattive
+[032:44] io non è che scrivo BAMIC 2AB del semitendinoso
+[032:47] non finisce lì
+[032:48] perché bisogna dire dov'è
+[032:51] bisogna vedere a che altezza è prossimale, medio, distale
+[032:55] quanto è grande, qual è la sezione trasversa
+[032:59] qual è l'estensione longitudinale
+[033:00] però quando poi parliamo di return to play
+[033:04] un elemento molto utile per chi gestisce l'atleta
+[033:07] è proprio avere una classificazione
+[033:09] e vi porto degli esempi
+[033:10] di risonanza e di ecografia. Questa è una lesione BAMIC1, uno sfumato edema. Alle volte
+[033:17] sfumati edema, a sfumate aree di edema muscolare in risonanza, le ecografie sono praticamente
+[033:23] impercettibili. Quindi l'ecografia, soprattutto se è fatta molto precocemente, può risultare
+[033:28] del tutto negativa. Poi, cosa bisogna fare se è una ecografia? Bisogna fare sempre la
+[033:33] risonanza? Direi di no. Se la clinica è compatibile con una lesione in primo grado,
+[033:38] il basso grado
+[033:39] che poi a seconda delle classificazioni
+[033:41] la utilizziamo
+[033:42] posso non passare alla risonanza
+[033:44] per ora ci arriviamo
+[033:47] BAMIC 2
+[033:48] sulla base dell'estensione dell'edema
+[033:51] e risonanza
+[033:52] vi faccio vedere il corrispettivo ecografico
+[033:55] giusto perché vi faccio vedere lo stesso
+[033:57] tipo di lesione perché
+[033:58] non è proprio corretto utilizzare la BAMIC
+[034:01] in ecografia, non si dovrebbe utilizzare
+[034:03] ho ancora
+[034:05] delle lesioni
+[034:07] BAMIC 3
+[034:08] vi faccio vedere
+[034:09] quindi un'estensione dell'edema
+[034:12] maggiore, un interessamento tendinio
+[034:14] che vediamo là in basso
+[034:15] quindi questa ad esempio in basso sarebbero le fieme tipo 3C
+[034:19] e infine BAMIC 4
+[034:22] quando abbiamo BAMIC 4C
+[034:24] abbiamo un'avulsione completa degli schiocrurati
+[034:26] siamo abbastanza confidenti
+[034:28] nel fare questa diagnosi
+[034:30] e questa è quella dottore lungo che vi ho fatto
+[034:32] vedere prima
+[034:33] poi è molto diverso parlare di una avulsione
+[034:36] dell'aduttore lungo con retrazioni di un centimetro e parlare di una produzione degli ischio
+[034:40] plurali, quell'aduttore lì non venne operato, quegli ischio plurali magari sì, ma siccome
+[034:45] parliamo di eco, soffermiamoci su questo e non voglio semplificare perché in realtà
+[034:50] è molto più complesso. Pytron's e Takabayashi sono le due più frequenti, più frequentemente
+[034:58] utilizzate, sostanzialmente in irrografia noi dobbiamo capire se dare un grado 1, un grado
+[035:02] 2 o grado 3, se abbiamo un interessamento meno del 50%, più del 50% una rottura completa,
+[035:10] non sono molto diverse queste classificazioni. Il punto è dare un grado e descrivere una
+[035:16] lesione. In ecografia posso scrivere una lesione mio tendini approssimale, grado 2,
+[035:22] con diametro trasverso D, estensione onniturinale D o un ematoma intermuscolare D. Questa è
+[035:29] un'informazione molto utile che possiamo dare. In realtà poi il concetto del ritorno in campo
+[035:35] è molto più complesso e me lo insegnate voi, perché in realtà le classificazioni hanno
+[035:40] un ruolo predittivo, ma non sono abbastanza. Abbiamo visto come abbia un impatto sul rientro
+[035:47] in campo la lesione tendinia, però poi tutti quegli elementi vanno considerati. Qual è
+[035:52] l'età di quel paziente? È un giovane atleta di 16 anni o è un 38enne a fine carriera?
+[035:58] è l'alto dominante
+[035:59] qual è il gruppo muscolare interessato
+[036:02] che tipo di sport
+[036:04] qual è il suo movimento, è un portiere o un attaccante
+[036:06] quindi cambia radicalmente
+[036:08] non c'è bisogno che
+[036:10] sia io a dirglielo
+[036:12] e altra cosa
+[036:14] come dicevo prima
+[036:15] queste classificazioni non sembrano neanche abbastanza
+[036:18] non sono mai abbastanza
+[036:20] perché ogni ventre muscolare
+[036:22] ha storia a sé
+[036:24] quindi se il retto di stale è
+[036:25] diagnosticamente meglio di un rento prossimale,
+[036:28] la stessa cosa vale al contrario per il gastroclenico,
+[036:30] di stare peggiori prossimali.
+[036:32] Ma ci sono delle classificazioni che sono state costruite
+[036:35] per singoli gruppi muscolari,
+[036:37] come la classificazione di Pedret,
+[036:39] che è una classificazione esclusivamente ecografica
+[036:41] e solo per il gastroclenico mediale.
+[036:44] Quindi diventa sempre più complicato.
+[036:49] Ovviamente non potremmo chiudere con questo,
+[036:53] Lorenzo Barbera, a me non c'è bisogno di un'ambiga, mi ha una signora favorita. Poi oggi mi hanno detto che iniziare i miei lavori, no? A breve, forse, speriamo.
+[037:07] evoluzione complica e complicante cosa succede allora quanti di voi usano
+[037:14] l'epografia per monitorare le lesioni per alzate di mano ok segui le lesioni
+[037:22] muscolari con l'ecco giusto tutte le lesioni perché per gioco è interessante
+[037:32] seguire tutte però tutte tutte non è così utile nel senso che ha un senso in
+[037:40] alcuni casi, seguire l'evoluzione di una lesione, soprattutto se è una lesione che
+[037:47] non ha patta troppo con la clinica, se dall'evoluzione di quella lesione io decido se cambiare
+[037:54] e come adattare il percorso riabilitativo di quel paziente, se ho un ematoma voluminoso
+[038:00] assolutamente c'è un'indicazione a seguirla, non c'è un'indicazione a seguirlo con la
+[038:04] risonanza, perché la risonanza ti farà vedere l'edema a otranza e non ti dà informazione
+[038:10] sull'evoluzione di quella cicatrice, perché la cicatrice non la vedo bene in risonanza,
+[038:13] anzi non la vedo proprio, non vedo le calcificazioni in risonanza che vedo in ecografia,
+[038:18] è assolutamente andare a mettere un atleta in risonanza ogni 15 giorni in una follia.
+[038:22] Quindi monitorare certi tipi di lesioni ha senso.
+[038:25] Ma come evolvono queste lesioni?
+[038:27] La prima settimana sostanzialmente si alterna contemporaneamente la fase di distruzione,
+[038:34] l'infiammazione iniziale e la fase di riparazione.
+[038:37] e non cambia molto la prima settimana
+[038:40] come vi dicevo prima
+[038:41] non cambia molto fare la risonanza del primo o del quinto giorno
+[038:44] comincia a cambiare dalla seconda settimana
+[038:46] e vedete quella cicatrice immatura
+[038:49] cioè la lesione si riduce l'enema
+[038:53] comincia a formarsi un qualcosa di inizialmente amorfo
+[038:56] o un segnale intermedio
+[038:57] finché piano piano non si ricomincia a formare
+[038:59] quella struttura tendinea nera
+[039:01] nera come in tecchile ma nera anche come la cicatrice
+[039:05] Per questo dico, il monitoraggio ecografico può avere molto più senso di un monitoraggio RM.
+[039:12] Questa è una cicatrice immatura con il power doppler e quella in basso a destra è una cicatrice matura.
+[039:18] La cicatrice matura è bianca, soprattutto quando fa troppa cicatrice.
+[039:24] Ha un aspetto stellato, è precogena e non ha power doppler.
+[039:28] Cosa succede nell'evoluzione di una lesione muscolare dal punto di vista ecografico?
+[039:32] ovviamente ci aspettiamo che l'ematoma si riduca, che diventi più iponecogeno, che il difetto si vada colmando e si forma questa struttura amorfa che sembra un po' ventremuscolare, un po' cicatrice.
+[039:45] Dopodiché lo valuto dinamicamente perché cerco di capire se quella lesione si apre ai margini, se quella lesione si muova in maniera sincrona con la fascia o con il ventre muscolare sottostante,
+[039:56] abbiamo accennato per il gastrocnome mediale, però come vi dicevo farlo in tutti non è
+[040:05] utile, però in alcuni casi assolutamente ha un'utilità. Cosa può succedere come complicanza
+[040:13] di una lesione muscolare? Vi faccio vedere tutti i vari corrispettivi e QRM così vi fate
+[040:19] un'idea. Sicuramente una cicatrice ipertrofica. Una cicatrice ipertrofica è un problema. Io
+[040:27] ho il periodo che ero a Torino, mi ricordo le risonanze che facevamo i giuratori della
+[040:31] Juve e mi ricordo il polpaccio di Chiellini. Era crivellato di colpi, cioè aveva tutte
+[040:37] queste aree stellate ipo-intenti di violenza e lui continuava a recidivare attorno a quelle
+[040:43] cicatrici lì, perché sono un punto di minore elasticità tessutale attorno alle quali si
+[040:47] possono avere delle regitive.
+[040:50] E l'aspetto è quello,
+[040:51] in risonanza, in ecografia,
+[040:53] questo aspetto stellato,
+[040:54] i precogeno,
+[040:55] che vedete in alto a destra.
+[040:57] Altra possibile complicanza,
+[040:59] una miocidio ossificante,
+[041:01] la miocidio ossificante,
+[041:02] voi in risonanza non ci capite niente,
+[041:03] perché noi,
+[041:04] in faccia di risonanza,
+[041:05] vediamo un edema diffuso,
+[041:07] non vediamo certo le calcificazioni,
+[041:09] neanche in una fase iniziale,
+[041:10] cosa che vediamo precocemente in eco
+[041:12] e vediamo in RX.
+[041:14] Lì è importante intercettarla presto
+[041:17] per trattarla in maniera corretta. Altra complicanza, quell'atrofia muscolare che voi vedete come iper-ecogenicità
+[041:26] all'ecografia e in risonanza lo vedete come infiltrato adiposo. Si può vedere un'atrofia in evoluzione adiposa focale
+[041:35] o di un intero gruppo muscolare che è legato o alla perdita di tensione del tendine, quindi quel muscolo non lavora più bene,
+[041:41] è come se fosse disinserito e allora va incontro all'atrofia, può essere legata a fenomeni di denervazione.
+[041:47] Lo vediamo ad esempio nei riflessori. Quando abbiamo una lesione di questo tipo, vedete, una lesione profonda degli hamstring
+[041:54] in cui abbiamo avuto un coinvolgimento anche del nervo sciatico che sta sotto il bicipite femorale,
+[042:00] il tessuto cicatezziale può determinare anche un coinvolgimento dello sciatico, delle diramazioni che vanno al ventre muscolare
+[042:06] e il risultato è questa denervazione qui.
+[042:11] Che altro? Trombosi della nosa profonda. Trombosi della nosa profonda cercatela sempre e vi dico
+[042:19] cercatela soprattutto se fate un gastrocnemio, cioè tennis leg, lesione sospetta, lesione
+[042:24] distrattiva di gastrocnemio mediale, una delle complicanze più frequenti è la trombosi
+[042:29] delle gevellari, della poplitea, quindi non solo il doppio, comprimiamo quella vena, mettiamo
+[042:36] il muscolo bello rilassato, quindi il piede fuori dal lettino, non lo impuntiamo sul
+[042:40] del tiro perché il risultato è mettere in tensione il muscolo e i tendini e comprimere
+[042:44] i vasi e quindi non riusciamo a capire se siano pervi e comprimibili. Comprimiamoli
+[042:50] e cerchiamo queste belle trombosi veloce. Le ernie muscolari non sono frequenti, la
+[042:58] sede più frequente è il fibiale anteriore, quindi l'oggiantrolaterale di gamba, una
+[043:02] questione anatomica legata ai vasi perforanti, però si possono formare un po' ovunque e
+[043:08] non tutte le ernie muscolari si vedono in contrazione, le vediamo le volte più in rilasciamento,
+[043:14] dipende se sono al centro o alla fine del ventre muscolare, quindi questa cosa la vediamo
+[043:20] in eco, in risonanza noi non la vediamo, cioè io qua la sto immaginando perché il tecnico
+[043:25] mi ha messo un repere e mi sta dicendo che c'è clinicamente una tumefazione, allora
+[043:30] io lo sospetto ma l'ernia muscolare io la vedo in ecografia, non la vedo in risonanza
+[043:35] assolutamente. Quindi tutto ciò che sono calcificazioni e qualsiasi cosa sia dinamico
+[043:41] non chiedete la risonanza ma chiedete l'ecografia. E qui altri casi ecografici e muscolari, trombosi
+[043:48] venosa e una miosite ossificante evoluta da questa lesione qua. Questa è una flow chart
+[043:58] che stiamo pubblicando sulle raccomandazioni per chi fosse interessato su come fare l'ecografia
+[044:05] muscolotetine e le lesioni muscolari,
+[044:07] sostanzialmente riassumono quello che vi ho detto
+[044:11] in questa presentazione.
+[044:14] A parte l'approccio clinico ed ecografico
+[044:16] che bisogna avere a un sospetto di lesione muscolare,
+[044:19] se la lesione è confermata dobbiamo refertarla
+[044:22] secondo una checklist che adesso vi faccio vedere
+[044:24] e gestiamo il paziente senza, nella maggior parte dei casi,
+[044:28] bisogno di una lesione magnetica.
+[044:30] Se il reperto è negativo o equivoco,
+[044:33] allora rivalutiamo criticamente questo paziente
+[044:37] il sospetto è forte o sospettiamo al massimo una lesione di basso grado
+[044:41] perché possiamo anche evitarci la risonanza
+[044:43] in un paziente positivo ma con un'eco-necreativa
+[044:45] se invece il sospetto è forte
+[044:48] ripetiamo l'eco o pensiamo di fare la risonanza
+[044:52] se c'è una discrepanza importante
+[044:55] tra la clinica e il reperto ecografico negativo
+[044:57] discorso a parte, finestrella
+[045:00] atleta professionista
+[045:02] anatomia complessa
+[045:04] il soleo soprattutto
+[045:06] il soleo è pericolosissimo
+[045:07] perché ecologicamente non lo studiamo bene
+[045:09] perché c'è questa polerosi centrale
+[045:12] se non le polerosi laterali
+[045:14] è anatomicamente difficile da studiare
+[045:17] le lesioni ce le prendiamo
+[045:19] in ecografia
+[045:20] e eventuali lesioni
+[045:22] che possano avere un'indicazione chirurgica
+[045:24] allora in quel caso risonanza magnetica
+[045:26] perché ovviamente all'ortopedico
+[045:29] al chirurgo serve un'immagine
+[045:31] che sia riproducibile e rivedibile. Questo è quello che noi dobbiamo scrivere in un
+[045:38] referto onografico, sembra una cosa complicatissima, in realtà è quello che ci siamo detti, perché
+[045:42] dobbiamo dire qual è il muscolo interessato, prossimale, medio distale, dobbiamo dire il
+[045:48] tipo di lesione, entra muscolare, mio tendinio, mio fasciale, mio aponeurotica, c'è un
+[045:54] coinvolgimento tendinio oppure no, c'è una interruzione delle fibre oppure no o è solo
+[045:59] la cross-section all'area, se riusciamo la scriviamo, se c'è una retrazione, lo vediamo in longitudinale,
+[046:05] e quanto è questa retrazione endigia muscolare, la valutazione dinamica soprattutto utile nella rivalutazione muscolare,
+[046:16] l'ematoma, quanto è grande, è fluido, quanto è fluido, qual è la componente fluida, perché può essere sottoposto ad aspirazione,
+[046:24] vascularizzazione
+[046:27] più che altro nel follow up
+[046:29] e in fine il grado come vi ho detto prima
+[046:31] quindi sembra tantissima roba
+[046:33] in realtà sono due righe di refetto, non di più
+[046:35] senza
+[046:36] fare cose strabilianti
+[046:39] quindi insomma abbiamo visto
+[046:42] quello che ci interessava
+[046:44] sulle leggi muscolari, avete visto quanto
+[046:46] mi sono concentrato sull'anatomia, sul
+[046:48] connettivo, sulla terminologia
+[046:50] quanto questo impatti poi sulla
+[046:53] gestione dei pazienti
+[046:55] abbiamo visto qual è lo stadio più bello
+[046:57] d'Italia
+[046:58] e con questo vi ringrazio se avete domande
+[047:01] ne parliamo
+[047:42] Giuseppe Termini
+[048:00] grazie
+[048:02] Grazie.
+[048:39] senza guardare il paziente
+[048:41] non lo so
+[048:43] hai capito cosa vuoi dire?
+[048:47] lo metto sempre a sinistra
+[048:49] però quando ti sai
+[048:51] lo schermo da l'altra parte
+[048:53] non c'è comunque lo schermo
+[048:55] cioè
+[048:57] da noi tu lo tieni sempre dal tuo lato
+[048:59] lo schermo
+[049:01] sempre?
+[049:03] anche lui lo si spostava
+[049:05] anche lui lo si spostava
+[049:07] non so come mai
